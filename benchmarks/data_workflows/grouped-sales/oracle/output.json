@@ -1,0 +1,16 @@
+{
+  "regions": [
+    {
+      "region": "East",
+      "units": 5,
+      "revenue_cents": 723,
+      "order_count": 2
+    },
+    {
+      "region": "West",
+      "units": 4,
+      "revenue_cents": 675,
+      "order_count": 2
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+id,name,email,updated_at
+A01,Ana,Ana@Example.COM,2025-01-02
+A02,Ana M, ana@example.com ,2025-01-05
+B01,Ben,ben@example.com,2025-01-03
+B02,Ben Jr,BEN@example.com,2025-01-03
+C01,Cara,cara@example.com,2024-12-31
+X01,Unknown,   ,2025-12-31

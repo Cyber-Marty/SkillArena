@@ -1,0 +1,20 @@
+schema_version: 2
+name: data-skill-version-pilot
+suite: ../benchmarks/data_workflows/suite.json
+tasks: [decimal-invoices, missing-versus-zero]
+conditions:
+  - id: baseline
+    skill: null
+  - id: v1
+    skill: skills/data-v1
+  - id: v2
+    skill: skills/data-v2
+runner:
+  type: codex-mcp
+  model: gpt-6-sol
+  reasoning_effort: high
+  timeout_seconds: 180
+  max_tool_calls: 40
+repetitions: 1
+seed: 42
+max_agent_runs: 6

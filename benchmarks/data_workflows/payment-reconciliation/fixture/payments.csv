@@ -1,0 +1,6 @@
+payment_id,invoice_id,amount_cents
+P1,I1,400
+P2,I1,600
+P3,I2,650
+P4,I9,200
+P5,I4,200

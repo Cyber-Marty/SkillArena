@@ -1,0 +1,12 @@
+{
+  "id": "timezone-events",
+  "title": "Select events by UTC calendar date",
+  "prompt": "# Select events by UTC calendar date\n\nRead `events.csv`. Each `local_time` is an ISO 8601 timestamp with an explicit numeric UTC offset; use that offset to convert the instant to UTC. Select events whose UTC calendar date is `2025-03-09`, including both date boundaries. Output an object with `events`, sorted by converted UTC timestamp ascending and then by `event_id` ascending for equal timestamps. Each event has `event_id` and `utc_time`; format the latter as `YYYY-MM-DDTHH:MM:SSZ` with exactly second precision. Do not select by the date written before the offset.\n\nWrite a UTF-8 `output.json` in the workspace root. Use the exact JSON field names, value types, and array order specified above. JSON object key order and whitespace do not matter.\n",
+  "source": "Original synthetic fixture created for SkillArena; no external dataset.",
+  "license": "MIT",
+  "tags": [
+    "csv",
+    "dates",
+    "timezone"
+  ]
+}

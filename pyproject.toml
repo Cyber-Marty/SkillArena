@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "skillarena"
-version = "0.1.0"
+version = "0.2.0"
 description = "Local, reproducible A/B benchmarks for AI agent skills"
 readme = "README.md"
 requires-python = ">=3.11"
@@ -32,4 +32,4 @@ Issues = "https://github.com/Cyber-Marty/SkillArena/issues"
 include = ["skillarena*"]
 
 [tool.setuptools.package-data]
-skillarena = ["report.html.j2", "starter/*", "starter/fixture/*"]
+skillarena = ["report.html.j2", "report_v2.html.j2", "starter/*", "starter/fixture/*"]

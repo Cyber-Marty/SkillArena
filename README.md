@@ -1,116 +1,63 @@
 # SkillArena
 
-**Does an AI skill actually improve an agent's work? Test it on the same task, in separate workspaces, and keep the evidence.**
+**Test whether a skill changes an agent's results on the same frozen tasks, and keep the evidence needed to inspect each run.**
 
-SkillArena is an early-stage, local A/B benchmark tool. It runs a command-based agent with and without a skill, evaluates both results, and creates a shareable HTML report with per-run logs and artifacts. It does not host models or execute cloud jobs.
+SkillArena is a local benchmark harness. Version 0.2 runs a real Codex agent through a restricted file-tool interface and compares three conditions: no skill (`baseline`), an initial skill (`v1`), and a revised skill (`v2`). The included data workflow suite has ten original synthetic tasks. Its results describe this suite and setup; they do not measure general workplace performance.
 
-[中文说明](README.zh-CN.md)
+[中文说明](README.zh-CN.md) · [Methodology](docs/methodology.md) · [Evidence bundle guide](docs/result-bundle.md)
 
-## First real-model result
+## Current evidence
 
-We ran **GPT-6 Sol, high reasoning effort** on a small Python bug fix, three times per condition using the existing ChatGPT login. The task fixture is synthetic; the model runs are real.
+**Formal v0.2 experiment pending.** The checked-in [full experiment definition](examples/agent_suite.yaml) schedules 10 tasks × 3 conditions × 1 repetition = 30 agent runs. No 30-run result is claimed here. An earlier, separate [model-only Python bug-fix pilot](research/gpt6-sol-high-2026-10-14/README.md) found 3/3 passes with and without a skill; it used a different task and protocol and must not be treated as a data-suite result.
 
-| Condition | Successful runs | Mean input tokens | Mean runner time |
-| --- | ---: | ---: | ---: |
-| Without skill | 3/3 | 14,457 | 34.9 s |
-| With skill | 3/3 | 14,507 | 46.7 s |
+The [deterministic demo](examples/demo.yaml) is useful for checking the legacy command-runner workflow. Its 0% → 100% change comes from scripted agents, not model inference.
 
-**Observed success-rate change: 0 percentage points.** This task was easy for the model, and three pairs do not support a broad claim about skills or latency. Read the [experiment, raw metrics and per-run evidence](research/gpt6-sol-high-2026-10-14/README.md).
+## Install and inspect the plan
 
-![Real GPT-6 Sol High benchmark report showing 3/3 successes in both conditions](docs/images/real-report.png)
-
-> **Honest demo:** The included `demo_agent.py` is a deterministic fixture, not an AI model. Its 0% → 100% result shows the workflow only. No real-world performance claim follows from it.
-
-## Try it in five minutes
-
-Requires Python 3.11+ and a trusted local checkout.
+Use Python 3.11+ and install from a trusted source checkout. This project is not published on PyPI.
 
 ```bash
 git clone https://github.com/Cyber-Marty/SkillArena.git
 cd SkillArena
 python -m venv .venv
-# Activate .venv for your shell, then:
+# Activate .venv for your shell.
 python -m pip install -e .
-skillarena run examples/demo.yaml --output results/demo
+skillarena plan examples/agent_suite.yaml
 ```
 
-Open `results/demo/report.html` in a browser. The same directory contains `metrics.json`, `logs/`, and an isolated workspace for each run under `artifacts/`.
+`plan` reads the frozen tasks and prints the scheduled order and budget **without starting a model**. The [six-run smoke definition](examples/agent_smoke.yaml) uses two tasks across the same three conditions; it is a setup check, not the full experiment.
 
-The demo prints:
+## Run the agent suite
 
-```text
-Benchmark: python_bug_fix_demo
-Baseline: 0/3
-With skill: 3/3
-Report: .../results/demo/report.html
-```
-
-The numbers are **synthetic**. Replace the demo runner and fixture before drawing any conclusion about a real skill.
-
-## How it works
-
-```text
-Benchmark YAML ──> fresh task copy ──> agent command ──> external evaluator
-                       │                 │                    │
-                       └── baseline and skill, repeated ──────┘
-                                           │
-                              metrics.json + logs + report.html
-```
-
-Each condition starts from the same source files. The run order alternates between repetitions. The evaluation command lives outside the copied task workspace, so a normal agent edit cannot silently rewrite the checker. A run succeeds only if the runner and evaluator both exit with code `0`.
-
-## Define a benchmark
-
-```yaml
-name: my_bug_fix
-description: Test whether a debugging skill helps on a fixed task.
-task:
-  source: fixture
-  prompt: Fix the bug in calculate.py.
-skill: skill.md
-runner:
-  type: command
-  command: [python, "{benchmark_dir}/my_agent.py"]
-evaluation:
-  command: [python, "{benchmark_dir}/evaluate.py"]
-repetitions: 5
-timeout_seconds: 60
-```
-
-`{benchmark_dir}` expands to the directory containing the YAML file. Both commands run with the copied task directory as their current working directory. The runner receives:
-
-| Environment variable | Meaning |
-| --- | --- |
-| `SKILLARENA_TASK_DIR` | Path to this run's fresh task copy |
-| `SKILLARENA_TASK_PROMPT` | Task text from the YAML file |
-| `SKILLARENA_SKILL_PATH` | Absolute skill file path for the skill arm; empty for baseline |
-| `SKILLARENA_ARM` | `baseline` or `skill` |
-
-The same command runs for both conditions. An adapter can call any installed agent CLI or model SDK and should log its own token and tool counts if available. SkillArena's generic command adapter leaves these metrics as `null`; it never estimates them.
-
-Benchmark files execute local commands. **Run only definitions you trust.** Keep evaluation logic outside `task.source` and do not allow the agent to edit it.
-
-## CLI
+The agent path needs a current Codex CLI signed in with an existing ChatGPT login. If the command on `PATH` is an older CLI, set `SKILLARENA_CODEX_BIN` to the current executable. The CLI must support the configured `gpt-6-sol` model with high reasoning effort and the required strict configuration options.
 
 ```bash
-skillarena init my-benchmark                # copy the starter fixture
-skillarena run my-benchmark/benchmark.yaml --output results/experiment-1
-skillarena report results/experiment-1/metrics.json
-skillarena compare results/experiment-1 results/experiment-2
+skillarena doctor
+skillarena run examples/agent_smoke.yaml --execute --output results/agent-smoke
+skillarena run examples/agent_suite.yaml --execute --output results/agent-suite
+skillarena verify results/agent-suite
+skillarena compare results/agent-suite --left v1 --right v2
+skillarena report results/agent-suite/metrics.json --output results/agent-suite-view.html
 ```
 
-To rerun the real-model example, use `skillarena run examples/real_codex.yaml --output results/my-real-run`. It requires a current Codex CLI signed in with ChatGPT. Set `SKILLARENA_CODEX_BIN` to the CLI executable if your shell resolves an older version. The adapter refuses API-key authentication and asks the model for a full-file replacement in a read-only session; SkillArena writes and evaluates the returned code locally.
+Use a new output directory for every run. `--execute` is required for schema v2 experiments. The full definition caps execution at 30 agent runs, 40 workspace-tool calls and 180 seconds per run. `doctor` and each run check the existing ChatGPT login and included quota. API credentials or custom endpoints are rejected; available or unknown paid-credit state and low or unknown included quota stop model execution. This is a local guard against extra API purchases, **not an independent account-billing audit**. A run consumes included ChatGPT usage when allowed. No command here buys credits.
 
-Choose a new output directory for each run. `results/` is ignored by Git to avoid publishing generated code or private model logs by accident.
+The tool boundary is deliberately narrow: the agent can list and read task files, write only `output.json`, check that file's JSON syntax, and list or read the supplied skill. Shell, web, arbitrary code execution, and other tools are disabled. Skill access is explicit through `list_skills` and `read_skill`; this experiment does not test Codex's native implicit skill routing. `check_output` reports JSON syntax and types, not correctness. A trusted verifier scores the answer after the agent exits.
 
-## Read results responsibly
+## What the suite measures
 
-The headline metric is the fraction of successful runs per condition, with the absolute percentage-point difference. The report also shows per-run duration and changed file counts. The raw JSON records exit codes and timeouts. A few repetitions do not prove a skill helps generally: use multiple representative tasks, hold model settings fixed, record model versions and costs in your external adapter, and inspect failures. See [benchmark methodology](docs/methodology.md).
+The [data workflow suite](benchmarks/data_workflows/README.md) covers CSV cleanup, deduplication, grouped aggregation, decimal money, UTC offset conversion, joins, missing versus zero, stable ranking, reconciliation, and JSON schema validation. Public instructions and input data are copied into a fresh workspace for each run. Expected answers and verifiers stay outside that workspace. Each task has an accepted oracle and a plausible wrong-answer test. All data are synthetic and MIT licensed; no independent real-world validity claim follows from these checks.
 
-## Status and roadmap
+The default report records per-condition pass rates, paired differences, task-level outcomes, tool calls, skill reads, duration, and model-reported token usage where present. Infrastructure errors and unrun slots remain visible. The task bootstrap interval appears only when enough complete task pairs exist; it is descriptive. See [methodology](docs/methodology.md) before comparing versions.
 
-**Available now:** YAML definitions, isolated local runs, command adapter, exit-code evaluation, JSON metrics, logs, artifacts, self-contained HTML report, starter benchmark, and CI.
+## Evidence and comparisons
 
-**Planned:** broader model adapters, richer evaluators, task suites, and uncertainty estimates across multiple tasks. These are not implemented yet. This repository is not published on PyPI; install from the checkout as shown above.
+A completed schema v2 run writes a sealed directory with a manifest, source snapshot, plan, environment summary, per-run prompts and events, tool audit, submitted output, evaluator result, metrics, and HTML report. `skillarena verify` checks file integrity offline without executing bundle code. Matching hashes show that files have not changed since sealing; they do not authenticate the model run or establish independent replication. Put any regenerated report or comparison JSON **outside** the sealed bundle. [Bundle fields and review steps](docs/result-bundle.md) explain the limits.
 
-Contributions are welcome. Start with [CONTRIBUTING.md](CONTRIBUTING.md), especially if you can provide a small, independently checkable task fixture. MIT licensed.
+`skillarena compare RESULTS --left v1 --right v2` compares two conditions in one bundle. A second compatible results directory can be supplied as `skillarena compare FIRST SECOND --left v1 --right v2`. Compatibility checks require matching suite identity and hashes, task IDs and hashes, repetition count, and runner configuration. A skill version comparison is meaningful only for the declared tasks and tool boundary.
+
+The earlier command-based format still works with `skillarena run examples/demo.yaml --output results/demo`; it runs local commands from a trusted benchmark definition. Do not execute a benchmark definition from an untrusted source. See [CONTRIBUTING.md](CONTRIBUTING.md) for task requirements.
+
+## Related projects and name
+
+Other projects also evaluate agent skills, including [SkillsBench](https://github.com/benchflow-ai/skillsbench). [Jiaqi Liu's SkillArena dataset and framework](https://huggingface.co/datasets/JiaaqiLiu/SkillArena-datasets) also uses the SkillArena name. This repository is a separate project and claims no affiliation with either. MIT licensed.
