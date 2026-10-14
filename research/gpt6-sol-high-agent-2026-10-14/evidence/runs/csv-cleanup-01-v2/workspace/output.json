@@ -1,0 +1,32 @@
+{
+  "contacts": [
+    {
+      "id": "1",
+      "name": "Ada Lovelace",
+      "email": "ada@example.com",
+      "city": "London"
+    },
+    {
+      "id": "2",
+      "name": "Grace Hopper",
+      "email": "grace@example.com",
+      "city": "Arlington"
+    },
+    {
+      "id": "5",
+      "name": "Marie Curie",
+      "email": "marie@example.com",
+      "city": null
+    },
+    {
+      "id": "6",
+      "name": "José Álvarez",
+      "email": "jose@example.com",
+      "city": "Zürich"
+    }
+  ],
+  "dropped_ids": [
+    "3",
+    "4"
+  ]
+}

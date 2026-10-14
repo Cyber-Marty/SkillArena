@@ -1,0 +1,35 @@
+{
+  "id": "missing-versus-zero-01-v1",
+  "task_id": "missing-versus-zero",
+  "condition": "v1",
+  "repetition": 1,
+  "status": "passed",
+  "success": true,
+  "runner": {
+    "returncode": 0,
+    "timed_out": false,
+    "duration_seconds": 55.329,
+    "completed": true,
+    "token_usage": {
+      "input_tokens": 35932,
+      "cached_input_tokens": 31232,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 436,
+      "reasoning_output_tokens": 73
+    },
+    "tool_calls": 7,
+    "started": true,
+    "protocol_valid": true,
+    "malformed_events": 0,
+    "skill_loaded": true,
+    "unexpected_tools": [],
+    "valid_agent_run": true
+  },
+  "evaluation": {
+    "returncode": 0,
+    "timed_out": false,
+    "duration_seconds": 0.678
+  },
+  "workspace_before_sha256": "e4685cc3cfa6c4b254edaf1905d96ff5bb5c63b778ec8a720162b8fada01f733",
+  "workspace_after_sha256": "f9e9d6facefe43981f27511d4ac2333a1c38c1a8cdb2550b3628db5c9d841ef5"
+}

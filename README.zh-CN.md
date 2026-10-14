@@ -6,7 +6,19 @@ SkillArena 是本地基准测试工具。v0.2 让真实的 Codex Agent 通过受
 
 ## 当前证据
 
-**v0.2 的正式实验尚待运行。** [完整实验配置](examples/agent_suite.yaml)安排 10 个任务 × 3 种条件 × 1 次重复，共 30 次 Agent 运行；本文暂不报告其成绩。此前单独进行的[真实模型 Python 修错试验](research/gpt6-sol-high-2026-10-14/README.md)在有无 Skill 时均为 3/3 通过，但任务和运行协议不同，不能当作数据套件的结果。[确定性演示](examples/demo.yaml)中的 0% → 100% 来自脚本，不是模型效果。
+**已公开 30 次真实 GPT-6 Sol High Agent 运行：**10 个原创合成任务 × 3 个条件 × 1 次重复。
+
+| 条件 | 通过 |
+| --- | ---: |
+| baseline | 10/10 |
+| v1 | 10/10 |
+| v2 | 10/10 |
+
+v1 → v2 的成功率差值为 **+0.0 个百分点**。结果仅适用于本套任务，不能证明 Skill 在其他场景无效或各版本等价。[查看完整证据与局限](research/gpt6-sol-high-agent-2026-10-14/README.md) · [在线查看报告](https://Cyber-Marty.github.io/SkillArena/)。
+
+![真实 Agent 评测报告](docs/images/agent-report.png)
+
+此前的[模型直接修错试验](research/gpt6-sol-high-2026-10-14/README.md)采用不同协议，单独保留。[确定性演示](examples/demo.yaml)中的 0% → 100% 来自脚本。
 
 ## 安装与离线预览
 
@@ -38,7 +50,7 @@ skillarena report results/agent-suite/metrics.json --output results/agent-suite-
 
 每次运行都要使用新的输出目录。v0.2 实验必须显式加 `--execute`。完整配置上限为 30 次 Agent 运行，每次最多 40 次工具调用、180 秒。`doctor` 和运行过程会检查现有 ChatGPT 登录及套餐内额度；检测到 API 凭据、自定义端点、可用或状态不明的付费额度，以及不足或状态不明的套餐内额度时，会停止模型运行。它是本地的额外付费防护，**并非独立的账户账单审计**；允许的运行仍会消耗套餐内用量，工具不会购买额度。
 
-Agent 只能列出和读取任务文件、写入 `output.json`、检查该文件的 JSON 语法，以及列出或读取所提供的 Skill。Shell、联网和任意代码执行被禁用。Skill 由 Agent 明确调用 `list_skills`、`read_skill` 获取；这项实验不测试 Codex 原生的隐式 Skill 路由。`check_output` 只检查语法与类型，正确性由 Agent 退出后的可信验证器判定。
+Agent 只能列出和读取任务文件、写入 `output.json`、检查该文件的 JSON 语法，以及列出或读取所提供的 Skill。Agent 无法使用 Shell、网页浏览或任意代码执行；模型推理仍通过现有 ChatGPT 登录连接服务。Skill 由 Agent 明确调用 `list_skills`、`read_skill` 获取；这项实验不测试 Codex 原生的隐式 Skill 路由。`check_output` 只检查语法与类型，正确性由 Agent 退出后的可信验证器判定。
 
 [数据处理套件](benchmarks/data_workflows/README.md)覆盖 CSV 清理、去重、分组汇总、十进制金额、时区转换、关联、缺失值与零值、稳定排名、对账和 JSON 结构验证。每项任务都测试正确答案可通过验证器、至少一种合理的错误答案会被拒绝。输入均为原创合成数据，采用 MIT 许可；这些检查不构成独立的真实场景有效性证明。
 

@@ -1,2 +1,5 @@
 * text=auto eol=lf
 *.png binary
+# Evidence hashes cover exact bytes, including original line endings.
+research/**/evidence/** -text
+research/**/setup/** -text

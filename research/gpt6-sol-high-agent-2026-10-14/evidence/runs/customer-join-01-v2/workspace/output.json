@@ -1,0 +1,36 @@
+{
+  "orders": [
+    {
+      "order_id": "O1",
+      "customer_id": "C1",
+      "customer_name": "Ada",
+      "region": "US",
+      "amount_cents": 1200
+    },
+    {
+      "order_id": "O2",
+      "customer_id": "C9",
+      "customer_name": null,
+      "region": null,
+      "amount_cents": 400
+    },
+    {
+      "order_id": "O3",
+      "customer_id": "C2",
+      "customer_name": "Ben",
+      "region": "CA",
+      "amount_cents": 0
+    },
+    {
+      "order_id": "O4",
+      "customer_id": "C1",
+      "customer_name": "Ada",
+      "region": "US",
+      "amount_cents": 200
+    }
+  ],
+  "unmatched_order_ids": [
+    "O2"
+  ],
+  "known_total_cents": 1400
+}

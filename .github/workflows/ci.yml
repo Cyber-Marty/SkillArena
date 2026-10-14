@@ -17,3 +17,5 @@ jobs:
       - run: python -m pytest -q
       - run: skillarena run examples/demo.yaml --output results/ci-demo
       - run: skillarena plan examples/agent_suite.yaml
+      - run: skillarena verify research/gpt6-sol-high-agent-2026-10-14/evidence
+      - run: skillarena compare research/gpt6-sol-high-agent-2026-10-14/evidence --left v1 --right v2 --output results/version-comparison.json

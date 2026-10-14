@@ -1,0 +1,83 @@
+{
+  "schema_version": 2,
+  "algorithm": "sha256",
+  "evidence_level": "author-submitted",
+  "integrity_notice": "Integrity does not prove authenticity or independent replication.",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "5fd124e78fc6a54f11c0573aef6a828cd874c04f97aebda9a5174bc8184d887f",
+      "size": 598
+    },
+    {
+      "path": "check-01/events.jsonl",
+      "sha256": "350a5836a8f2932d9f053ad1f7421b3b178c1ac443d33858a96a5c8d8b96c125",
+      "size": 2555
+    },
+    {
+      "path": "check-01/instructions.txt",
+      "sha256": "3e2685a8c9d2113a8d884ad2839ad7e3261a09a58550d4bf370cc53ef038ae82",
+      "size": 598
+    },
+    {
+      "path": "check-01/prompt.txt",
+      "sha256": "c0868a28c6b05c870180ed81d64b954d6a15d80dad448c4f33c98b0bbf11a1f7",
+      "size": 67
+    },
+    {
+      "path": "check-01/stderr.txt",
+      "sha256": "059dbbbd645547d4fc38e530d7722b38c4c7ecc0aa9207a600fc98395358f80e",
+      "size": 486
+    },
+    {
+      "path": "check-01/workspace/TASK.md",
+      "sha256": "7bb1455edbb12f99836dd03b4409a8a5c62963439ced693120f9cab6237da743",
+      "size": 971
+    },
+    {
+      "path": "check-01/workspace/invoices.csv",
+      "sha256": "133d0e847d496088e301a483e1df6ab36a1fe568f344116858189c2955e705a6",
+      "size": 114
+    },
+    {
+      "path": "check-02/events.jsonl",
+      "sha256": "04cb3d82d360cb16bacef69f7e4fe17ce5dfc9f4cd2c7a509d3608814c88ab59",
+      "size": 7591
+    },
+    {
+      "path": "check-02/instructions.txt",
+      "sha256": "3e2685a8c9d2113a8d884ad2839ad7e3261a09a58550d4bf370cc53ef038ae82",
+      "size": 598
+    },
+    {
+      "path": "check-02/prompt.txt",
+      "sha256": "c0868a28c6b05c870180ed81d64b954d6a15d80dad448c4f33c98b0bbf11a1f7",
+      "size": 67
+    },
+    {
+      "path": "check-02/stderr.txt",
+      "sha256": "3b76f08fcc3cb36875a59d4841b82d43f277057cb20387e5f5506573b206ea81",
+      "size": 366
+    },
+    {
+      "path": "check-02/tools.jsonl",
+      "sha256": "cd7fd0cbad32974520f131224a793bf3958109b60fe5c591e178270134ca6bbc",
+      "size": 1052
+    },
+    {
+      "path": "check-02/workspace/TASK.md",
+      "sha256": "7bb1455edbb12f99836dd03b4409a8a5c62963439ced693120f9cab6237da743",
+      "size": 971
+    },
+    {
+      "path": "check-02/workspace/invoices.csv",
+      "sha256": "133d0e847d496088e301a483e1df6ab36a1fe568f344116858189c2955e705a6",
+      "size": 114
+    },
+    {
+      "path": "check-02/workspace/output.json",
+      "sha256": "c058128db8def034446f59b373b3475b724a51a3d02edef205d565d24164ebfd",
+      "size": 337
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{"sequence":1,"name":"list_files","arguments":{},"result":{"isError":false,"type":"list_files"},"status":"ok","elapsed_ms":1.919}
+{"sequence":2,"name":"list_skills","arguments":{},"result":{"isError":false,"type":"list_skills"},"status":"ok","elapsed_ms":1.443}
+{"sequence":3,"name":"read_skill","arguments":{"path":"SKILL.md"},"result":{"isError":false,"type":"read_skill"},"status":"ok","elapsed_ms":3.178}
+{"sequence":4,"name":"read_file","arguments":{"path":"TASK.md"},"result":{"isError":false,"type":"read_file"},"status":"ok","elapsed_ms":3.905}
+{"sequence":5,"name":"read_file","arguments":{"path":"inventory.csv"},"result":{"isError":false,"type":"read_file"},"status":"ok","elapsed_ms":3.083}
+{"sequence":6,"name":"write_file","arguments":{"path":"output.json","content_bytes":294},"result":{"isError":false,"type":"write_file"},"status":"ok","elapsed_ms":4.672}
+{"sequence":7,"name":"check_output","arguments":{"path":"output.json"},"result":{"isError":false,"type":"check_output","valid_json":true},"status":"ok","elapsed_ms":7.228}

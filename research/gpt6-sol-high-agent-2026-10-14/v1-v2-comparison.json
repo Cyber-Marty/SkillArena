@@ -1,0 +1,382 @@
+{
+  "left_condition": "v1",
+  "right_condition": "v2",
+  "matched_pairs": 10,
+  "excluded_pairs": 0,
+  "excluded_reasons": {
+    "missing": 0,
+    "infrastructure_error": 0,
+    "not_run": 0
+  },
+  "complete_tasks": 10,
+  "partial_pairs": false,
+  "improvements": 0,
+  "ties": 10,
+  "regressions": 0,
+  "delta": 0.0,
+  "ci95": null,
+  "descriptive_only": true,
+  "interval_method": "paired task bootstrap, 4000 resamples, seed 20260417",
+  "interval_note": "Suppressed for fewer than 5 tasks, incomplete pairs, or no observed task variation; never proves equivalence.",
+  "per_task": {
+    "contact-dedupe": {
+      "matched_pairs": 1,
+      "excluded_pairs": 0,
+      "complete": true,
+      "left_pass_rate": 1.0,
+      "right_pass_rate": 1.0,
+      "delta": 0.0,
+      "outcome": "tie"
+    },
+    "csv-cleanup": {
+      "matched_pairs": 1,
+      "excluded_pairs": 0,
+      "complete": true,
+      "left_pass_rate": 1.0,
+      "right_pass_rate": 1.0,
+      "delta": 0.0,
+      "outcome": "tie"
+    },
+    "customer-join": {
+      "matched_pairs": 1,
+      "excluded_pairs": 0,
+      "complete": true,
+      "left_pass_rate": 1.0,
+      "right_pass_rate": 1.0,
+      "delta": 0.0,
+      "outcome": "tie"
+    },
+    "decimal-invoices": {
+      "matched_pairs": 1,
+      "excluded_pairs": 0,
+      "complete": true,
+      "left_pass_rate": 1.0,
+      "right_pass_rate": 1.0,
+      "delta": 0.0,
+      "outcome": "tie"
+    },
+    "grouped-sales": {
+      "matched_pairs": 1,
+      "excluded_pairs": 0,
+      "complete": true,
+      "left_pass_rate": 1.0,
+      "right_pass_rate": 1.0,
+      "delta": 0.0,
+      "outcome": "tie"
+    },
+    "missing-versus-zero": {
+      "matched_pairs": 1,
+      "excluded_pairs": 0,
+      "complete": true,
+      "left_pass_rate": 1.0,
+      "right_pass_rate": 1.0,
+      "delta": 0.0,
+      "outcome": "tie"
+    },
+    "payment-reconciliation": {
+      "matched_pairs": 1,
+      "excluded_pairs": 0,
+      "complete": true,
+      "left_pass_rate": 1.0,
+      "right_pass_rate": 1.0,
+      "delta": 0.0,
+      "outcome": "tie"
+    },
+    "schema-validation": {
+      "matched_pairs": 1,
+      "excluded_pairs": 0,
+      "complete": true,
+      "left_pass_rate": 1.0,
+      "right_pass_rate": 1.0,
+      "delta": 0.0,
+      "outcome": "tie"
+    },
+    "stable-ranking": {
+      "matched_pairs": 1,
+      "excluded_pairs": 0,
+      "complete": true,
+      "left_pass_rate": 1.0,
+      "right_pass_rate": 1.0,
+      "delta": 0.0,
+      "outcome": "tie"
+    },
+    "timezone-events": {
+      "matched_pairs": 1,
+      "excluded_pairs": 0,
+      "complete": true,
+      "left_pass_rate": 1.0,
+      "right_pass_rate": 1.0,
+      "delta": 0.0,
+      "outcome": "tie"
+    }
+  },
+  "compatible": true,
+  "left_condition_summary": {
+    "completed": 10,
+    "scored": 10,
+    "passed": 10,
+    "failed": 0,
+    "infrastructure_error": 0,
+    "not_run": 0,
+    "pass_rate": 1.0,
+    "mean_runner_seconds": 40.1735,
+    "mean_input_tokens": 43231.2,
+    "mean_output_tokens": 482.3,
+    "per_task": {
+      "contact-dedupe": {
+        "completed": 1,
+        "scored": 1,
+        "passed": 1,
+        "failed": 0,
+        "infrastructure_error": 0,
+        "not_run": 0,
+        "pass_rate": 1.0,
+        "mean_runner_seconds": 42.72,
+        "mean_input_tokens": 44193.0,
+        "mean_output_tokens": 469.0
+      },
+      "csv-cleanup": {
+        "completed": 1,
+        "scored": 1,
+        "passed": 1,
+        "failed": 0,
+        "infrastructure_error": 0,
+        "not_run": 0,
+        "pass_rate": 1.0,
+        "mean_runner_seconds": 43.236,
+        "mean_input_tokens": 44265.0,
+        "mean_output_tokens": 497.0
+      },
+      "customer-join": {
+        "completed": 1,
+        "scored": 1,
+        "passed": 1,
+        "failed": 0,
+        "infrastructure_error": 0,
+        "not_run": 0,
+        "pass_rate": 1.0,
+        "mean_runner_seconds": 29.298,
+        "mean_input_tokens": 44415.0,
+        "mean_output_tokens": 535.0
+      },
+      "decimal-invoices": {
+        "completed": 1,
+        "scored": 1,
+        "passed": 1,
+        "failed": 0,
+        "infrastructure_error": 0,
+        "not_run": 0,
+        "pass_rate": 1.0,
+        "mean_runner_seconds": 47.607,
+        "mean_input_tokens": 44349.0,
+        "mean_output_tokens": 565.0
+      },
+      "grouped-sales": {
+        "completed": 1,
+        "scored": 1,
+        "passed": 1,
+        "failed": 0,
+        "infrastructure_error": 0,
+        "not_run": 0,
+        "pass_rate": 1.0,
+        "mean_runner_seconds": 29.075,
+        "mean_input_tokens": 43998.0,
+        "mean_output_tokens": 409.0
+      },
+      "missing-versus-zero": {
+        "completed": 1,
+        "scored": 1,
+        "passed": 1,
+        "failed": 0,
+        "infrastructure_error": 0,
+        "not_run": 0,
+        "pass_rate": 1.0,
+        "mean_runner_seconds": 55.329,
+        "mean_input_tokens": 35932.0,
+        "mean_output_tokens": 436.0
+      },
+      "payment-reconciliation": {
+        "completed": 1,
+        "scored": 1,
+        "passed": 1,
+        "failed": 0,
+        "infrastructure_error": 0,
+        "not_run": 0,
+        "pass_rate": 1.0,
+        "mean_runner_seconds": 62.082,
+        "mean_input_tokens": 49852.0,
+        "mean_output_tokens": 552.0
+      },
+      "schema-validation": {
+        "completed": 1,
+        "scored": 1,
+        "passed": 1,
+        "failed": 0,
+        "infrastructure_error": 0,
+        "not_run": 0,
+        "pass_rate": 1.0,
+        "mean_runner_seconds": 35.581,
+        "mean_input_tokens": 45682.0,
+        "mean_output_tokens": 507.0
+      },
+      "stable-ranking": {
+        "completed": 1,
+        "scored": 1,
+        "passed": 1,
+        "failed": 0,
+        "infrastructure_error": 0,
+        "not_run": 0,
+        "pass_rate": 1.0,
+        "mean_runner_seconds": 29.482,
+        "mean_input_tokens": 43776.0,
+        "mean_output_tokens": 447.0
+      },
+      "timezone-events": {
+        "completed": 1,
+        "scored": 1,
+        "passed": 1,
+        "failed": 0,
+        "infrastructure_error": 0,
+        "not_run": 0,
+        "pass_rate": 1.0,
+        "mean_runner_seconds": 27.325,
+        "mean_input_tokens": 35850.0,
+        "mean_output_tokens": 406.0
+      }
+    }
+  },
+  "right_condition_summary": {
+    "completed": 10,
+    "scored": 10,
+    "passed": 10,
+    "failed": 0,
+    "infrastructure_error": 0,
+    "not_run": 0,
+    "pass_rate": 1.0,
+    "mean_runner_seconds": 43.3902,
+    "mean_input_tokens": 42438.8,
+    "mean_output_tokens": 503.0,
+    "per_task": {
+      "contact-dedupe": {
+        "completed": 1,
+        "scored": 1,
+        "passed": 1,
+        "failed": 0,
+        "infrastructure_error": 0,
+        "not_run": 0,
+        "pass_rate": 1.0,
+        "mean_runner_seconds": 61.826,
+        "mean_input_tokens": 45085.0,
+        "mean_output_tokens": 520.0
+      },
+      "csv-cleanup": {
+        "completed": 1,
+        "scored": 1,
+        "passed": 1,
+        "failed": 0,
+        "infrastructure_error": 0,
+        "not_run": 0,
+        "pass_rate": 1.0,
+        "mean_runner_seconds": 53.024,
+        "mean_input_tokens": 45927.0,
+        "mean_output_tokens": 525.0
+      },
+      "customer-join": {
+        "completed": 1,
+        "scored": 1,
+        "passed": 1,
+        "failed": 0,
+        "infrastructure_error": 0,
+        "not_run": 0,
+        "pass_rate": 1.0,
+        "mean_runner_seconds": 28.694,
+        "mean_input_tokens": 36292.0,
+        "mean_output_tokens": 500.0
+      },
+      "decimal-invoices": {
+        "completed": 1,
+        "scored": 1,
+        "passed": 1,
+        "failed": 0,
+        "infrastructure_error": 0,
+        "not_run": 0,
+        "pass_rate": 1.0,
+        "mean_runner_seconds": 34.79,
+        "mean_input_tokens": 43144.0,
+        "mean_output_tokens": 571.0
+      },
+      "grouped-sales": {
+        "completed": 1,
+        "scored": 1,
+        "passed": 1,
+        "failed": 0,
+        "infrastructure_error": 0,
+        "not_run": 0,
+        "pass_rate": 1.0,
+        "mean_runner_seconds": 33.35,
+        "mean_input_tokens": 44691.0,
+        "mean_output_tokens": 519.0
+      },
+      "missing-versus-zero": {
+        "completed": 1,
+        "scored": 1,
+        "passed": 1,
+        "failed": 0,
+        "infrastructure_error": 0,
+        "not_run": 0,
+        "pass_rate": 1.0,
+        "mean_runner_seconds": 52.357,
+        "mean_input_tokens": 36222.0,
+        "mean_output_tokens": 405.0
+      },
+      "payment-reconciliation": {
+        "completed": 1,
+        "scored": 1,
+        "passed": 1,
+        "failed": 0,
+        "infrastructure_error": 0,
+        "not_run": 0,
+        "pass_rate": 1.0,
+        "mean_runner_seconds": 32.532,
+        "mean_input_tokens": 45328.0,
+        "mean_output_tokens": 547.0
+      },
+      "schema-validation": {
+        "completed": 1,
+        "scored": 1,
+        "passed": 1,
+        "failed": 0,
+        "infrastructure_error": 0,
+        "not_run": 0,
+        "pass_rate": 1.0,
+        "mean_runner_seconds": 59.459,
+        "mean_input_tokens": 46618.0,
+        "mean_output_tokens": 568.0
+      },
+      "stable-ranking": {
+        "completed": 1,
+        "scored": 1,
+        "passed": 1,
+        "failed": 0,
+        "infrastructure_error": 0,
+        "not_run": 0,
+        "pass_rate": 1.0,
+        "mean_runner_seconds": 26.56,
+        "mean_input_tokens": 36209.0,
+        "mean_output_tokens": 401.0
+      },
+      "timezone-events": {
+        "completed": 1,
+        "scored": 1,
+        "passed": 1,
+        "failed": 0,
+        "infrastructure_error": 0,
+        "not_run": 0,
+        "pass_rate": 1.0,
+        "mean_runner_seconds": 51.31,
+        "mean_input_tokens": 44872.0,
+        "mean_output_tokens": 474.0
+      }
+    }
+  }
+}

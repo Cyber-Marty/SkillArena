@@ -1,0 +1,1 @@
+{"invoices":[{"invoice_id":"I1","taxable":"10.00","tax":"0.83","total":"10.83"},{"invoice_id":"I2","taxable":"0.10","tax":"0.01","total":"0.11"},{"invoice_id":"I3","taxable":"17.99","tax":"1.80","total":"19.79"},{"invoice_id":"I4","taxable":"0.80","tax":"0.06","total":"0.86"}],"summary":{"taxable":"28.89","tax":"2.70","total":"31.59"}}

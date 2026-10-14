@@ -1,0 +1,1 @@
+{"items":[{"sku":"A","status":"unknown","order_qty":null},{"sku":"B","status":"reorder","order_qty":10},{"sku":"C","status":"sufficient","order_qty":0},{"sku":"D","status":"reorder","order_qty":6},{"sku":"E","status":"sufficient","order_qty":0},{"sku":"F","status":"unknown","order_qty":null}]}

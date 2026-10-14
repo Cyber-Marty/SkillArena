@@ -106,3 +106,16 @@ def test_infrastructure_failure_preserves_unrun_slots(monkeypatch, tmp_path):
     assert not metrics["complete"]
     assert [run["status"] for run in metrics["runs"]] == ["infrastructure_error", "not_run"]
     assert verify_bundle(output)["valid"]
+
+
+def test_agent_choosing_no_tools_is_scored_failure(monkeypatch, tmp_path):
+    offline_dependencies(monkeypatch)
+    def fake_agent(*args):
+        return {"returncode": 0, "completed": True, "started": True, "timed_out": False,
+                "duration_seconds": 1, "valid_agent_run": False, "protocol_valid": True,
+                "tool_delivery_failure": False, "unexpected_tools": [], "tool_calls": 0,
+                "skill_loaded": False, "token_usage": None}
+    monkeypatch.setattr(suite, "run_agent", fake_agent)
+    metrics = suite.run_experiment(experiment_one_task(), tmp_path / "bundle", progress=lambda _: None)
+    assert metrics["complete"]
+    assert all(run["status"] == "failed" for run in metrics["runs"])

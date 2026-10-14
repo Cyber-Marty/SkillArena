@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite the software version and the exact evidence bundle used."
+type: software
+title: "SkillArena: Audited Agent Evaluations and Skill Version Comparisons"
+version: 0.2.0
+date-released: 2026-10-14
+authors:
+  - name: Cyber-Marty
+repository-code: "https://github.com/Cyber-Marty/SkillArena"
+license: MIT

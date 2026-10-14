@@ -1,0 +1,5 @@
+# Validate records against a small schema
+
+Read the `records` array in `records.json`. Each record should have: `id`, a nonempty JSON string; `age`, a JSON integer from 0 through 120 inclusive (JSON booleans do not count as integers); and `active`, a JSON boolean. For each field, a missing field or wrong JSON type yields `id_type`, `age_type`, or `active_type` respectively. An empty string ID yields `id_empty`; an integer age outside the range yields `age_range`. Extra fields are ignored. Check fields in the order `id`, `age`, `active` and list every issue for a record in that order. Output `valid_ids` containing IDs of valid records in input order and `errors` containing one object per invalid record in input order. Each error has `row` (1-based position in the array) and `issues` (array of code strings).
+
+Write a UTF-8 `output.json` in the workspace root. Use the exact JSON field names, value types, and array order specified above. JSON object key order and whitespace do not matter.

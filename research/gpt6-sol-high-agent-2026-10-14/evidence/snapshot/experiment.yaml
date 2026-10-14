@@ -1,0 +1,30 @@
+schema_version: 2
+name: data-skill-suite
+suite: suite/suite.json
+tasks:
+- decimal-invoices
+- missing-versus-zero
+- csv-cleanup
+- contact-dedupe
+- grouped-sales
+- timezone-events
+- customer-join
+- stable-ranking
+- payment-reconciliation
+- schema-validation
+conditions:
+- id: baseline
+  skill: null
+- id: v1
+  skill: skills/v1
+- id: v2
+  skill: skills/v2
+runner:
+  type: codex-mcp
+  model: gpt-6-sol
+  reasoning_effort: high
+  timeout_seconds: 180
+  max_tool_calls: 40
+repetitions: 1
+seed: 42
+max_agent_runs: 30

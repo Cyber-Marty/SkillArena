@@ -1,0 +1,35 @@
+{
+  "id": "customer-join-01-baseline",
+  "task_id": "customer-join",
+  "condition": "baseline",
+  "repetition": 1,
+  "status": "passed",
+  "success": true,
+  "runner": {
+    "returncode": 0,
+    "timed_out": false,
+    "duration_seconds": 31.473,
+    "completed": true,
+    "token_usage": {
+      "input_tokens": 43520,
+      "cached_input_tokens": 31872,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 432,
+      "reasoning_output_tokens": 58
+    },
+    "tool_calls": 7,
+    "started": true,
+    "protocol_valid": true,
+    "malformed_events": 0,
+    "skill_loaded": false,
+    "unexpected_tools": [],
+    "valid_agent_run": true
+  },
+  "evaluation": {
+    "returncode": 0,
+    "timed_out": false,
+    "duration_seconds": 0.376
+  },
+  "workspace_before_sha256": "ebc304e757ba4c9a2c3cb3b81e5815117fd80d2f2f40f18f3ba309fcbf99f3a5",
+  "workspace_after_sha256": "b8bf94087dff6368defb14eafdde8ccfdf95e26e61a824cc154962829810a36d"
+}

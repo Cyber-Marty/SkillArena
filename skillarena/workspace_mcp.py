@@ -47,6 +47,10 @@ def _json_type(value: Any) -> str:
     return "object"
 
 
+def _reject_nonfinite(value: str) -> None:
+    raise ValueError(f"{value} is not a valid JSON number")
+
+
 def _windows_reserved(part: str) -> bool:
     stem = part.split(".", 1)[0].rstrip(" ").upper()
     return (
@@ -244,9 +248,11 @@ class WorkspaceServer:
                 raise ToolFailure("check_output is limited to output.json")
             content = self._read_text(self._path(self.root, "output.json"))
             try:
-                value = json.loads(content)
+                value = json.loads(content, parse_constant=_reject_nonfinite)
             except json.JSONDecodeError as exc:
                 return {"valid_json": False, "error": exc.msg, "line": exc.lineno, "column": exc.colno}
+            except ValueError as exc:
+                return {"valid_json": False, "error": str(exc)}
             result: dict[str, Any] = {"valid_json": True, "type": _json_type(value)}
             if isinstance(value, dict):
                 result["field_types"] = {key: _json_type(val) for key, val in value.items()}

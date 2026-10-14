@@ -1,0 +1,35 @@
+{
+  "id": "decimal-invoices-01-baseline",
+  "task_id": "decimal-invoices",
+  "condition": "baseline",
+  "repetition": 1,
+  "status": "passed",
+  "success": true,
+  "runner": {
+    "returncode": 0,
+    "timed_out": false,
+    "duration_seconds": 55.978,
+    "completed": true,
+    "token_usage": {
+      "input_tokens": 43812,
+      "cached_input_tokens": 38912,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 528,
+      "reasoning_output_tokens": 142
+    },
+    "tool_calls": 6,
+    "started": true,
+    "protocol_valid": true,
+    "malformed_events": 0,
+    "skill_loaded": false,
+    "unexpected_tools": [],
+    "valid_agent_run": true
+  },
+  "evaluation": {
+    "returncode": 0,
+    "timed_out": false,
+    "duration_seconds": 0.534
+  },
+  "workspace_before_sha256": "8c7dd8f57eb1de063692b0312451a90541aacbd81559a42f78d77caf1bc12542",
+  "workspace_after_sha256": "c83cbf865ec8753ad82628b3b7f5b75407268c2c0732fcf4635c611ba266e7e8"
+}

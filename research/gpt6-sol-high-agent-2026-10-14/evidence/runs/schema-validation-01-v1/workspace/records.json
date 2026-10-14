@@ -1,0 +1,53 @@
+{
+  "records": [
+    {
+      "id": "u1",
+      "age": 30,
+      "active": true
+    },
+    {
+      "id": "",
+      "age": 20,
+      "active": true
+    },
+    {
+      "id": "u3",
+      "age": -1,
+      "active": true
+    },
+    {
+      "id": "u4",
+      "age": true,
+      "active": true
+    },
+    {
+      "id": "u5",
+      "age": 42,
+      "active": "yes"
+    },
+    {
+      "id": "u6",
+      "age": 20
+    },
+    {
+      "id": "u7",
+      "age": 120,
+      "active": false,
+      "note": "ignored"
+    },
+    {
+      "id": "u8",
+      "age": 121,
+      "active": false
+    },
+    {
+      "id": "u9",
+      "age": 0,
+      "active": false
+    },
+    {
+      "age": null,
+      "active": 1
+    }
+  ]
+}

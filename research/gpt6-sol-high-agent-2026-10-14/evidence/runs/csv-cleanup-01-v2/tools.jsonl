@@ -1,0 +1,8 @@
+{"sequence":1,"name":"list_files","arguments":{},"result":{"isError":false,"type":"list_files"},"status":"ok","elapsed_ms":2.89}
+{"sequence":2,"name":"list_skills","arguments":{},"result":{"isError":false,"type":"list_skills"},"status":"ok","elapsed_ms":1.701}
+{"sequence":3,"name":"read_skill","arguments":{"path":"SKILL.md"},"result":{"isError":false,"type":"read_skill"},"status":"ok","elapsed_ms":1.572}
+{"sequence":4,"name":"read_file","arguments":{"path":"TASK.md"},"result":{"isError":false,"type":"read_file"},"status":"ok","elapsed_ms":1.411}
+{"sequence":5,"name":"read_file","arguments":{"path":"contacts.csv"},"result":{"isError":false,"type":"read_file"},"status":"ok","elapsed_ms":1.544}
+{"sequence":6,"name":"write_file","arguments":{"path":"output.json","content_bytes":538},"result":{"isError":false,"type":"write_file"},"status":"ok","elapsed_ms":5.088}
+{"sequence":7,"name":"check_output","arguments":{"path":"output.json"},"result":{"isError":false,"type":"check_output","valid_json":true},"status":"ok","elapsed_ms":17.135}
+{"sequence":8,"name":"read_file","arguments":{"path":"output.json"},"result":{"isError":false,"type":"read_file"},"status":"ok","elapsed_ms":1.936}

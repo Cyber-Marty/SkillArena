@@ -1,0 +1,2063 @@
+{
+  "schema_version": 2,
+  "algorithm": "sha256",
+  "evidence_level": "author-submitted",
+  "integrity_notice": "Integrity does not prove authenticity or independent replication.",
+  "files": [
+    {
+      "path": "environment.json",
+      "sha256": "5b9c47fa2fe6a612d51b44bc3acad4f3d2797457c17bf3950e18f17e5a487a9c",
+      "size": 346
+    },
+    {
+      "path": "metrics.json",
+      "sha256": "14956b915ea6c48979a876431cbe1d9a70f434c05f6334be7df4020f84a14f3b",
+      "size": 60236
+    },
+    {
+      "path": "plan.json",
+      "sha256": "5224c204115ac9eae178ac5745cf584133115c75226161fe4cbd0c1d06cae4f5",
+      "size": 4862
+    },
+    {
+      "path": "quota-after.json",
+      "sha256": "24fd737a49665cdf80be0bee53bb3ed5ddd92aa84fa74ee998b40273843dfb91",
+      "size": 199
+    },
+    {
+      "path": "redactions.json",
+      "sha256": "16671e21ce63ed2ac0f615b5c3c69a686029dc5f64203db62ff9ffb7dcaebcc6",
+      "size": 2170
+    },
+    {
+      "path": "report.html",
+      "sha256": "28d413f388603611281885be57e474e07731da43ad5f5ed17e5a5bbd2ce8d77d",
+      "size": 17474
+    },
+    {
+      "path": "runs/contact-dedupe-01-baseline/evaluation.json",
+      "sha256": "25c43cec9c558c20eea1818151b6c1ff2675925b9c28b2de2937ebf9e72bfb6e",
+      "size": 118
+    },
+    {
+      "path": "runs/contact-dedupe-01-baseline/events.jsonl",
+      "sha256": "92d14879abaa265b759b0df0a55e8e457c99e318f27d483bd5a61a01cc66ceec",
+      "size": 5408
+    },
+    {
+      "path": "runs/contact-dedupe-01-baseline/instructions.txt",
+      "sha256": "3e2685a8c9d2113a8d884ad2839ad7e3261a09a58550d4bf370cc53ef038ae82",
+      "size": 598
+    },
+    {
+      "path": "runs/contact-dedupe-01-baseline/prompt.txt",
+      "sha256": "c0868a28c6b05c870180ed81d64b954d6a15d80dad448c4f33c98b0bbf11a1f7",
+      "size": 67
+    },
+    {
+      "path": "runs/contact-dedupe-01-baseline/quota-before.json",
+      "sha256": "9971aba1e015bc9974ce71fba6c939809de6fa62fc237ee4e18747f9e3cc66b2",
+      "size": 199
+    },
+    {
+      "path": "runs/contact-dedupe-01-baseline/run.json",
+      "sha256": "2cf5c7e7e908598eaa6d3c2f8a3e5d819cbe87439b5088da522b47d2d74acd47",
+      "size": 978
+    },
+    {
+      "path": "runs/contact-dedupe-01-baseline/stderr.txt",
+      "sha256": "a55ed6db5eeea31cf0122ff9503bf233132ad146615cf3f004f7f2859585ffa1",
+      "size": 366
+    },
+    {
+      "path": "runs/contact-dedupe-01-baseline/tools.jsonl",
+      "sha256": "1e78c94a52eb0f317da02dfacd39bc3e773b0fd23a3a3afc3e33789581434e96",
+      "size": 899
+    },
+    {
+      "path": "runs/contact-dedupe-01-baseline/workspace/TASK.md",
+      "sha256": "3a9059f032abb9196274b68e6a0ecad9b2245373b42934da97cda2af13e1921d",
+      "size": 733
+    },
+    {
+      "path": "runs/contact-dedupe-01-baseline/workspace/contacts.csv",
+      "sha256": "d350612667b6c59ca011873af136f4ba2307129ca22afec8ac4d0c97f775441f",
+      "size": 243
+    },
+    {
+      "path": "runs/contact-dedupe-01-baseline/workspace/output.json",
+      "sha256": "26363c0093b071ff9ce8da21c1dd9483a81fccbbc1ef0bad18453788f517f97f",
+      "size": 252
+    },
+    {
+      "path": "runs/contact-dedupe-01-v1/evaluation.json",
+      "sha256": "a8c79018f558ecf40d5cb348b384887b9c884f3da6781d11e0aa7bcea87df69d",
+      "size": 117
+    },
+    {
+      "path": "runs/contact-dedupe-01-v1/events.jsonl",
+      "sha256": "1fb491c3216c3f4fd9c96a7123c72baac625ec45f5a5c209c47ca64236b0cd40",
+      "size": 6303
+    },
+    {
+      "path": "runs/contact-dedupe-01-v1/instructions.txt",
+      "sha256": "3e2685a8c9d2113a8d884ad2839ad7e3261a09a58550d4bf370cc53ef038ae82",
+      "size": 598
+    },
+    {
+      "path": "runs/contact-dedupe-01-v1/prompt.txt",
+      "sha256": "c0868a28c6b05c870180ed81d64b954d6a15d80dad448c4f33c98b0bbf11a1f7",
+      "size": 67
+    },
+    {
+      "path": "runs/contact-dedupe-01-v1/quota-before.json",
+      "sha256": "9971aba1e015bc9974ce71fba6c939809de6fa62fc237ee4e18747f9e3cc66b2",
+      "size": 199
+    },
+    {
+      "path": "runs/contact-dedupe-01-v1/run.json",
+      "sha256": "561c66a8a919583fecc1b899b0576971075ea452c3a36d5a18796b671b2d728c",
+      "size": 964
+    },
+    {
+      "path": "runs/contact-dedupe-01-v1/stderr.txt",
+      "sha256": "24fa698de601277d009c41330da9f3931e80cae84a9e22d6a3221372594f6831",
+      "size": 366
+    },
+    {
+      "path": "runs/contact-dedupe-01-v1/tools.jsonl",
+      "sha256": "c3908a5eda931c309185488315d641e8b260dc2a9259ebf5b136a264dda35191",
+      "size": 1052
+    },
+    {
+      "path": "runs/contact-dedupe-01-v1/workspace/TASK.md",
+      "sha256": "3a9059f032abb9196274b68e6a0ecad9b2245373b42934da97cda2af13e1921d",
+      "size": 733
+    },
+    {
+      "path": "runs/contact-dedupe-01-v1/workspace/contacts.csv",
+      "sha256": "d350612667b6c59ca011873af136f4ba2307129ca22afec8ac4d0c97f775441f",
+      "size": 243
+    },
+    {
+      "path": "runs/contact-dedupe-01-v1/workspace/output.json",
+      "sha256": "26363c0093b071ff9ce8da21c1dd9483a81fccbbc1ef0bad18453788f517f97f",
+      "size": 252
+    },
+    {
+      "path": "runs/contact-dedupe-01-v2/evaluation.json",
+      "sha256": "350dcad23ec00d8446f4456f3d9a0f9717574880fa5d77dc89d095a88a8567c0",
+      "size": 118
+    },
+    {
+      "path": "runs/contact-dedupe-01-v2/events.jsonl",
+      "sha256": "7fc5e461af58757cf0918be3c965d15731aa55c7499822f3da30b17ebc2f5fe8",
+      "size": 8094
+    },
+    {
+      "path": "runs/contact-dedupe-01-v2/instructions.txt",
+      "sha256": "3e2685a8c9d2113a8d884ad2839ad7e3261a09a58550d4bf370cc53ef038ae82",
+      "size": 598
+    },
+    {
+      "path": "runs/contact-dedupe-01-v2/prompt.txt",
+      "sha256": "c0868a28c6b05c870180ed81d64b954d6a15d80dad448c4f33c98b0bbf11a1f7",
+      "size": 67
+    },
+    {
+      "path": "runs/contact-dedupe-01-v2/quota-before.json",
+      "sha256": "9971aba1e015bc9974ce71fba6c939809de6fa62fc237ee4e18747f9e3cc66b2",
+      "size": 199
+    },
+    {
+      "path": "runs/contact-dedupe-01-v2/run.json",
+      "sha256": "9c36e14fe82f6ea07cef3e7882675dfdd44ac0056d218c62b39c78fc592fa689",
+      "size": 966
+    },
+    {
+      "path": "runs/contact-dedupe-01-v2/stderr.txt",
+      "sha256": "08e15660f4475f89a8e70d427bb23b7634b8152e7795b6f1cbead7a232ea0d79",
+      "size": 780
+    },
+    {
+      "path": "runs/contact-dedupe-01-v2/tools.jsonl",
+      "sha256": "435eec0ee26a2a6a13fba0b4127d3b7a1abf3938731fc2f8d1fe701ff1648e16",
+      "size": 1197
+    },
+    {
+      "path": "runs/contact-dedupe-01-v2/workspace/TASK.md",
+      "sha256": "3a9059f032abb9196274b68e6a0ecad9b2245373b42934da97cda2af13e1921d",
+      "size": 733
+    },
+    {
+      "path": "runs/contact-dedupe-01-v2/workspace/contacts.csv",
+      "sha256": "d350612667b6c59ca011873af136f4ba2307129ca22afec8ac4d0c97f775441f",
+      "size": 243
+    },
+    {
+      "path": "runs/contact-dedupe-01-v2/workspace/output.json",
+      "sha256": "26363c0093b071ff9ce8da21c1dd9483a81fccbbc1ef0bad18453788f517f97f",
+      "size": 252
+    },
+    {
+      "path": "runs/csv-cleanup-01-baseline/evaluation.json",
+      "sha256": "0b06d15597119fe8d39e4dda7e3eead9e8c50599de8c4e550519d4f5b4a22de0",
+      "size": 118
+    },
+    {
+      "path": "runs/csv-cleanup-01-baseline/events.jsonl",
+      "sha256": "98c6c987cfcec588c88e6f125097f97b162dd6ae90ddb545832348758499fcd6",
+      "size": 5844
+    },
+    {
+      "path": "runs/csv-cleanup-01-baseline/instructions.txt",
+      "sha256": "3e2685a8c9d2113a8d884ad2839ad7e3261a09a58550d4bf370cc53ef038ae82",
+      "size": 598
+    },
+    {
+      "path": "runs/csv-cleanup-01-baseline/prompt.txt",
+      "sha256": "c0868a28c6b05c870180ed81d64b954d6a15d80dad448c4f33c98b0bbf11a1f7",
+      "size": 67
+    },
+    {
+      "path": "runs/csv-cleanup-01-baseline/quota-before.json",
+      "sha256": "9971aba1e015bc9974ce71fba6c939809de6fa62fc237ee4e18747f9e3cc66b2",
+      "size": 199
+    },
+    {
+      "path": "runs/csv-cleanup-01-baseline/run.json",
+      "sha256": "a14684cdb24a4b22b654542e938578b614b2b5182b2f4d218a4619a05a94c597",
+      "size": 973
+    },
+    {
+      "path": "runs/csv-cleanup-01-baseline/stderr.txt",
+      "sha256": "52245c9b868e3c97b78452de27913247505b699fec9a2e7dc738401b3d3d3b69",
+      "size": 366
+    },
+    {
+      "path": "runs/csv-cleanup-01-baseline/tools.jsonl",
+      "sha256": "01687cce770c0ae53f930c6568ae750fe21f9104b4e77ae8edd684d6cef57cbf",
+      "size": 903
+    },
+    {
+      "path": "runs/csv-cleanup-01-baseline/workspace/TASK.md",
+      "sha256": "a6a540d3a4ffc6c5d665eb12717a0573f8da0c211727fc30be7d22a82397c973",
+      "size": 752
+    },
+    {
+      "path": "runs/csv-cleanup-01-baseline/workspace/contacts.csv",
+      "sha256": "8c7747777bd892005d63ececd24f2fa86d851ba147aa3086ae59542967cb40be",
+      "size": 288
+    },
+    {
+      "path": "runs/csv-cleanup-01-baseline/workspace/output.json",
+      "sha256": "6357577949c1fc988557aa0cb86165ce159686afc8b8236653a3e7bda330af1c",
+      "size": 344
+    },
+    {
+      "path": "runs/csv-cleanup-01-v1/evaluation.json",
+      "sha256": "79996e6488874edec3b77cbdd3d8695dfca844b842e80f4fa42762be45cd58ad",
+      "size": 118
+    },
+    {
+      "path": "runs/csv-cleanup-01-v1/events.jsonl",
+      "sha256": "07f18c1cfc04f76fc015f6a3240692ab8bca1aba4ebfd2b9ef57976daa1cb387",
+      "size": 7184
+    },
+    {
+      "path": "runs/csv-cleanup-01-v1/instructions.txt",
+      "sha256": "3e2685a8c9d2113a8d884ad2839ad7e3261a09a58550d4bf370cc53ef038ae82",
+      "size": 598
+    },
+    {
+      "path": "runs/csv-cleanup-01-v1/prompt.txt",
+      "sha256": "c0868a28c6b05c870180ed81d64b954d6a15d80dad448c4f33c98b0bbf11a1f7",
+      "size": 67
+    },
+    {
+      "path": "runs/csv-cleanup-01-v1/quota-before.json",
+      "sha256": "9971aba1e015bc9974ce71fba6c939809de6fa62fc237ee4e18747f9e3cc66b2",
+      "size": 199
+    },
+    {
+      "path": "runs/csv-cleanup-01-v1/run.json",
+      "sha256": "008e590f00b72c79ae7e6a9dcb1d74b26505193d2bd193ba1bbe4c97b903cee5",
+      "size": 959
+    },
+    {
+      "path": "runs/csv-cleanup-01-v1/stderr.txt",
+      "sha256": "3d6948d1b7d25585952c5dc0b999706f4cb7fe03ff5e8a33404c11569756c070",
+      "size": 366
+    },
+    {
+      "path": "runs/csv-cleanup-01-v1/tools.jsonl",
+      "sha256": "980c2f85adae74c81395f9f0ee97c0bb33f26f9b62c2f74bef1aae587af141d4",
+      "size": 1050
+    },
+    {
+      "path": "runs/csv-cleanup-01-v1/workspace/TASK.md",
+      "sha256": "a6a540d3a4ffc6c5d665eb12717a0573f8da0c211727fc30be7d22a82397c973",
+      "size": 752
+    },
+    {
+      "path": "runs/csv-cleanup-01-v1/workspace/contacts.csv",
+      "sha256": "8c7747777bd892005d63ececd24f2fa86d851ba147aa3086ae59542967cb40be",
+      "size": 288
+    },
+    {
+      "path": "runs/csv-cleanup-01-v1/workspace/output.json",
+      "sha256": "e5ce1814650842a0fb7c8e1d4bca8f0ac910bc65f8e2c7b32958000b3ae854d5",
+      "size": 538
+    },
+    {
+      "path": "runs/csv-cleanup-01-v2/evaluation.json",
+      "sha256": "34997a74b94deab738023117e4bda596ab90bdd63695a748469343581be43438",
+      "size": 118
+    },
+    {
+      "path": "runs/csv-cleanup-01-v2/events.jsonl",
+      "sha256": "9384f801a7db0123b4a424a46f4e9ccf1743115e67a3f3ac16c647ef5dfbbba0",
+      "size": 9423
+    },
+    {
+      "path": "runs/csv-cleanup-01-v2/instructions.txt",
+      "sha256": "3e2685a8c9d2113a8d884ad2839ad7e3261a09a58550d4bf370cc53ef038ae82",
+      "size": 598
+    },
+    {
+      "path": "runs/csv-cleanup-01-v2/prompt.txt",
+      "sha256": "c0868a28c6b05c870180ed81d64b954d6a15d80dad448c4f33c98b0bbf11a1f7",
+      "size": 67
+    },
+    {
+      "path": "runs/csv-cleanup-01-v2/quota-before.json",
+      "sha256": "9971aba1e015bc9974ce71fba6c939809de6fa62fc237ee4e18747f9e3cc66b2",
+      "size": 199
+    },
+    {
+      "path": "runs/csv-cleanup-01-v2/run.json",
+      "sha256": "29320af89abfb99f72bedc1600a5db4e05a6418d80049abf6a30d7de750afe7f",
+      "size": 959
+    },
+    {
+      "path": "runs/csv-cleanup-01-v2/stderr.txt",
+      "sha256": "6428065f9265311e4de487c99c8cc8b9181f4725cf93bcf8187760f220340e7c",
+      "size": 366
+    },
+    {
+      "path": "runs/csv-cleanup-01-v2/tools.jsonl",
+      "sha256": "2131ed4bd6c92ab1e59fb50c94f34a6a3a7c9d6b3fb538070b651a0ea8f73d14",
+      "size": 1200
+    },
+    {
+      "path": "runs/csv-cleanup-01-v2/workspace/TASK.md",
+      "sha256": "a6a540d3a4ffc6c5d665eb12717a0573f8da0c211727fc30be7d22a82397c973",
+      "size": 752
+    },
+    {
+      "path": "runs/csv-cleanup-01-v2/workspace/contacts.csv",
+      "sha256": "8c7747777bd892005d63ececd24f2fa86d851ba147aa3086ae59542967cb40be",
+      "size": 288
+    },
+    {
+      "path": "runs/csv-cleanup-01-v2/workspace/output.json",
+      "sha256": "e5ce1814650842a0fb7c8e1d4bca8f0ac910bc65f8e2c7b32958000b3ae854d5",
+      "size": 538
+    },
+    {
+      "path": "runs/customer-join-01-baseline/evaluation.json",
+      "sha256": "a019d3b5e01378b29c39f3f06db797c6a552b898f9b88cfa5ea1ef638d1e7105",
+      "size": 118
+    },
+    {
+      "path": "runs/customer-join-01-baseline/events.jsonl",
+      "sha256": "51844f445eaee730da383e802a158d35b2f8c6b77489af302fbfafc376e82cdf",
+      "size": 6419
+    },
+    {
+      "path": "runs/customer-join-01-baseline/instructions.txt",
+      "sha256": "3e2685a8c9d2113a8d884ad2839ad7e3261a09a58550d4bf370cc53ef038ae82",
+      "size": 598
+    },
+    {
+      "path": "runs/customer-join-01-baseline/prompt.txt",
+      "sha256": "c0868a28c6b05c870180ed81d64b954d6a15d80dad448c4f33c98b0bbf11a1f7",
+      "size": 67
+    },
+    {
+      "path": "runs/customer-join-01-baseline/quota-before.json",
+      "sha256": "4fbd3c1245badc1a6a93ce38a0f05cd978f021bd01bfb98a6a0bf242e776853b",
+      "size": 199
+    },
+    {
+      "path": "runs/customer-join-01-baseline/run.json",
+      "sha256": "7250a687811936311c29863576f0d222e06b77ff93f07e8b8e6b20cc8c99fae9",
+      "size": 976
+    },
+    {
+      "path": "runs/customer-join-01-baseline/stderr.txt",
+      "sha256": "5aaa49040eee31fbf3e575b5f48f0847c4ecb6db90f369bc515e0bd1a6130a68",
+      "size": 366
+    },
+    {
+      "path": "runs/customer-join-01-baseline/tools.jsonl",
+      "sha256": "65caa50fc52206c9305875ee9d5ae03b846b1bdda103eaeb1e12f414c26a4659",
+      "size": 1052
+    },
+    {
+      "path": "runs/customer-join-01-baseline/workspace/TASK.md",
+      "sha256": "a45874f475b44369fb801de6b310475099fb3d5b3fcea90dc61beea0e2f0c948",
+      "size": 801
+    },
+    {
+      "path": "runs/customer-join-01-baseline/workspace/customers.csv",
+      "sha256": "56c02035c1f28c6c101f76d3c17f17639c4bb31c24f9653356f75080e39185bb",
+      "size": 47
+    },
+    {
+      "path": "runs/customer-join-01-baseline/workspace/orders.csv",
+      "sha256": "e803e59af700848442635d2b04c6c510d68d0e9980cae5fcb9a22df1a125693b",
+      "size": 78
+    },
+    {
+      "path": "runs/customer-join-01-baseline/workspace/output.json",
+      "sha256": "e5c70db5881d936d59711911072243acc7545eb184cb68886b0dabc329f76ebd",
+      "size": 432
+    },
+    {
+      "path": "runs/customer-join-01-v1/evaluation.json",
+      "sha256": "a455728205cf1abcbefc921a41f4833a5cba0f475366bbe339c10d912fd3e5de",
+      "size": 118
+    },
+    {
+      "path": "runs/customer-join-01-v1/events.jsonl",
+      "sha256": "f64006806a2e3f048be0625a68952ae5cc141638c7c116d3cbaf7bc86ae1ce0d",
+      "size": 7313
+    },
+    {
+      "path": "runs/customer-join-01-v1/instructions.txt",
+      "sha256": "3e2685a8c9d2113a8d884ad2839ad7e3261a09a58550d4bf370cc53ef038ae82",
+      "size": 598
+    },
+    {
+      "path": "runs/customer-join-01-v1/prompt.txt",
+      "sha256": "c0868a28c6b05c870180ed81d64b954d6a15d80dad448c4f33c98b0bbf11a1f7",
+      "size": 67
+    },
+    {
+      "path": "runs/customer-join-01-v1/quota-before.json",
+      "sha256": "4fbd3c1245badc1a6a93ce38a0f05cd978f021bd01bfb98a6a0bf242e776853b",
+      "size": 199
+    },
+    {
+      "path": "runs/customer-join-01-v1/run.json",
+      "sha256": "fc4caf53167cff91e2c215505cb743c310fa9c66c37b4cae59e51b89d5e53733",
+      "size": 963
+    },
+    {
+      "path": "runs/customer-join-01-v1/stderr.txt",
+      "sha256": "275c00d4ed146d462afe632b73a121f6d7edb88c7fd038ecdf626f402d3fa0c8",
+      "size": 366
+    },
+    {
+      "path": "runs/customer-join-01-v1/tools.jsonl",
+      "sha256": "e8e2796c998914cccd8c06d722d4301606b9dc68cd3739ba6896535eeddbe58d",
+      "size": 1201
+    },
+    {
+      "path": "runs/customer-join-01-v1/workspace/TASK.md",
+      "sha256": "a45874f475b44369fb801de6b310475099fb3d5b3fcea90dc61beea0e2f0c948",
+      "size": 801
+    },
+    {
+      "path": "runs/customer-join-01-v1/workspace/customers.csv",
+      "sha256": "56c02035c1f28c6c101f76d3c17f17639c4bb31c24f9653356f75080e39185bb",
+      "size": 47
+    },
+    {
+      "path": "runs/customer-join-01-v1/workspace/orders.csv",
+      "sha256": "e803e59af700848442635d2b04c6c510d68d0e9980cae5fcb9a22df1a125693b",
+      "size": 78
+    },
+    {
+      "path": "runs/customer-join-01-v1/workspace/output.json",
+      "sha256": "e5c70db5881d936d59711911072243acc7545eb184cb68886b0dabc329f76ebd",
+      "size": 432
+    },
+    {
+      "path": "runs/customer-join-01-v2/evaluation.json",
+      "sha256": "5760a07519cb24fc6548604e4d051b3b0e45656ae4402e2b7725ce4e2678cf52",
+      "size": 118
+    },
+    {
+      "path": "runs/customer-join-01-v2/events.jsonl",
+      "sha256": "cb451ec44d4e92e1b65e8e15294ad2ac65e33618bc5a48efb6a00135f3523237",
+      "size": 8778
+    },
+    {
+      "path": "runs/customer-join-01-v2/instructions.txt",
+      "sha256": "3e2685a8c9d2113a8d884ad2839ad7e3261a09a58550d4bf370cc53ef038ae82",
+      "size": 598
+    },
+    {
+      "path": "runs/customer-join-01-v2/prompt.txt",
+      "sha256": "c0868a28c6b05c870180ed81d64b954d6a15d80dad448c4f33c98b0bbf11a1f7",
+      "size": 67
+    },
+    {
+      "path": "runs/customer-join-01-v2/quota-before.json",
+      "sha256": "4fbd3c1245badc1a6a93ce38a0f05cd978f021bd01bfb98a6a0bf242e776853b",
+      "size": 199
+    },
+    {
+      "path": "runs/customer-join-01-v2/run.json",
+      "sha256": "5968fc32de3eff7f2cd1ea8030bc7deadf5e08b8623e436ae4b25b95482c254f",
+      "size": 963
+    },
+    {
+      "path": "runs/customer-join-01-v2/stderr.txt",
+      "sha256": "8b9e3e397e68f55da9149407e3f05dac9ecd21f3dfa08a14d223b573b16d9dfb",
+      "size": 366
+    },
+    {
+      "path": "runs/customer-join-01-v2/tools.jsonl",
+      "sha256": "a17402cada028c83795c834a2fd0aabb46893f6e57af9808de9b3503f29ece45",
+      "size": 1199
+    },
+    {
+      "path": "runs/customer-join-01-v2/workspace/TASK.md",
+      "sha256": "a45874f475b44369fb801de6b310475099fb3d5b3fcea90dc61beea0e2f0c948",
+      "size": 801
+    },
+    {
+      "path": "runs/customer-join-01-v2/workspace/customers.csv",
+      "sha256": "56c02035c1f28c6c101f76d3c17f17639c4bb31c24f9653356f75080e39185bb",
+      "size": 47
+    },
+    {
+      "path": "runs/customer-join-01-v2/workspace/orders.csv",
+      "sha256": "e803e59af700848442635d2b04c6c510d68d0e9980cae5fcb9a22df1a125693b",
+      "size": 78
+    },
+    {
+      "path": "runs/customer-join-01-v2/workspace/output.json",
+      "sha256": "6086c1cac2fec62bad0a7067ae9bbe8f22d6579df7cf8ac9c075e6b9446085b4",
+      "size": 657
+    },
+    {
+      "path": "runs/decimal-invoices-01-baseline/evaluation.json",
+      "sha256": "9807e72a565564ca1148e18317fb8a07a0a115ae783b791df814214db63f4485",
+      "size": 118
+    },
+    {
+      "path": "runs/decimal-invoices-01-baseline/events.jsonl",
+      "sha256": "0fa2a49280c78a02185cd521b8b8e00feea22490dfdcc10ebcec4f3b0e5aaa5f",
+      "size": 5743
+    },
+    {
+      "path": "runs/decimal-invoices-01-baseline/instructions.txt",
+      "sha256": "3e2685a8c9d2113a8d884ad2839ad7e3261a09a58550d4bf370cc53ef038ae82",
+      "size": 598
+    },
+    {
+      "path": "runs/decimal-invoices-01-baseline/prompt.txt",
+      "sha256": "c0868a28c6b05c870180ed81d64b954d6a15d80dad448c4f33c98b0bbf11a1f7",
+      "size": 67
+    },
+    {
+      "path": "runs/decimal-invoices-01-baseline/quota-before.json",
+      "sha256": "5dcccadd43995c63b35ba2b788137f76f100c8488b02247773cf38cb55f522e0",
+      "size": 199
+    },
+    {
+      "path": "runs/decimal-invoices-01-baseline/run.json",
+      "sha256": "f0b0ddafba6e344f441e724f02fb91ed165e15c84b0ff1ff72ea8be86ef1ab65",
+      "size": 983
+    },
+    {
+      "path": "runs/decimal-invoices-01-baseline/stderr.txt",
+      "sha256": "f43baec3066c032f2c76ac1ee1c0ef28f13d4d0e256c4c73c8518e54dce02754",
+      "size": 366
+    },
+    {
+      "path": "runs/decimal-invoices-01-baseline/tools.jsonl",
+      "sha256": "6f9a2ce40fa070fce1b3cd1987bb7ffb73c7027a9e42872ce6edf6a5db58757a",
+      "size": 903
+    },
+    {
+      "path": "runs/decimal-invoices-01-baseline/workspace/TASK.md",
+      "sha256": "7bb1455edbb12f99836dd03b4409a8a5c62963439ced693120f9cab6237da743",
+      "size": 971
+    },
+    {
+      "path": "runs/decimal-invoices-01-baseline/workspace/invoices.csv",
+      "sha256": "133d0e847d496088e301a483e1df6ab36a1fe568f344116858189c2955e705a6",
+      "size": 114
+    },
+    {
+      "path": "runs/decimal-invoices-01-baseline/workspace/output.json",
+      "sha256": "c058128db8def034446f59b373b3475b724a51a3d02edef205d565d24164ebfd",
+      "size": 337
+    },
+    {
+      "path": "runs/decimal-invoices-01-v1/evaluation.json",
+      "sha256": "ba35c8ee03e21fcccfc42590878a30496494bf45deb8b92f828cb81eb592f3b1",
+      "size": 117
+    },
+    {
+      "path": "runs/decimal-invoices-01-v1/events.jsonl",
+      "sha256": "045faec215a83a4d5cc95eecbe0d0417c042efa644dfde1de8d1e0999f454d09",
+      "size": 6646
+    },
+    {
+      "path": "runs/decimal-invoices-01-v1/instructions.txt",
+      "sha256": "3e2685a8c9d2113a8d884ad2839ad7e3261a09a58550d4bf370cc53ef038ae82",
+      "size": 598
+    },
+    {
+      "path": "runs/decimal-invoices-01-v1/prompt.txt",
+      "sha256": "c0868a28c6b05c870180ed81d64b954d6a15d80dad448c4f33c98b0bbf11a1f7",
+      "size": 67
+    },
+    {
+      "path": "runs/decimal-invoices-01-v1/quota-before.json",
+      "sha256": "5dcccadd43995c63b35ba2b788137f76f100c8488b02247773cf38cb55f522e0",
+      "size": 199
+    },
+    {
+      "path": "runs/decimal-invoices-01-v1/run.json",
+      "sha256": "622bbb63a551e1d72346fc690671067d0164d4a148bcb80a2c2a188dc2383307",
+      "size": 969
+    },
+    {
+      "path": "runs/decimal-invoices-01-v1/stderr.txt",
+      "sha256": "dc23afc23a062bf8795853501d56e649c47983f4ce9eb0545d0b0e17051bbdfe",
+      "size": 486
+    },
+    {
+      "path": "runs/decimal-invoices-01-v1/tools.jsonl",
+      "sha256": "f1d18dc74044ad9d264b1d262c1693673c60a9ff011eba1f018dd3ea592bcff3",
+      "size": 1051
+    },
+    {
+      "path": "runs/decimal-invoices-01-v1/workspace/TASK.md",
+      "sha256": "7bb1455edbb12f99836dd03b4409a8a5c62963439ced693120f9cab6237da743",
+      "size": 971
+    },
+    {
+      "path": "runs/decimal-invoices-01-v1/workspace/invoices.csv",
+      "sha256": "133d0e847d496088e301a483e1df6ab36a1fe568f344116858189c2955e705a6",
+      "size": 114
+    },
+    {
+      "path": "runs/decimal-invoices-01-v1/workspace/output.json",
+      "sha256": "c058128db8def034446f59b373b3475b724a51a3d02edef205d565d24164ebfd",
+      "size": 337
+    },
+    {
+      "path": "runs/decimal-invoices-01-v2/evaluation.json",
+      "sha256": "7c743297c8740933f3992b7e087c72b7c6a7c0ced69c6154bb1c49aaddb5f439",
+      "size": 118
+    },
+    {
+      "path": "runs/decimal-invoices-01-v2/events.jsonl",
+      "sha256": "c7e721368a3e3d35cda4770aef7febe8b5996c77bca0d848aa5fb7ae97347125",
+      "size": 7630
+    },
+    {
+      "path": "runs/decimal-invoices-01-v2/instructions.txt",
+      "sha256": "3e2685a8c9d2113a8d884ad2839ad7e3261a09a58550d4bf370cc53ef038ae82",
+      "size": 598
+    },
+    {
+      "path": "runs/decimal-invoices-01-v2/prompt.txt",
+      "sha256": "c0868a28c6b05c870180ed81d64b954d6a15d80dad448c4f33c98b0bbf11a1f7",
+      "size": 67
+    },
+    {
+      "path": "runs/decimal-invoices-01-v2/quota-before.json",
+      "sha256": "5dcccadd43995c63b35ba2b788137f76f100c8488b02247773cf38cb55f522e0",
+      "size": 199
+    },
+    {
+      "path": "runs/decimal-invoices-01-v2/run.json",
+      "sha256": "0c5c54f8ceee91bb3588ce2dbe35889c17764adeadcd190e2a9e12df5a3c670d",
+      "size": 969
+    },
+    {
+      "path": "runs/decimal-invoices-01-v2/stderr.txt",
+      "sha256": "fe2fe669e54935668fa4b309b9bffb851e207628206b2277f633ad60fc3aaad5",
+      "size": 366
+    },
+    {
+      "path": "runs/decimal-invoices-01-v2/tools.jsonl",
+      "sha256": "a3ae508017f05b5e90bce2427b3c71845bb13af9cfe8316d8425f9ed03fedceb",
+      "size": 1051
+    },
+    {
+      "path": "runs/decimal-invoices-01-v2/workspace/TASK.md",
+      "sha256": "7bb1455edbb12f99836dd03b4409a8a5c62963439ced693120f9cab6237da743",
+      "size": 971
+    },
+    {
+      "path": "runs/decimal-invoices-01-v2/workspace/invoices.csv",
+      "sha256": "133d0e847d496088e301a483e1df6ab36a1fe568f344116858189c2955e705a6",
+      "size": 114
+    },
+    {
+      "path": "runs/decimal-invoices-01-v2/workspace/output.json",
+      "sha256": "c058128db8def034446f59b373b3475b724a51a3d02edef205d565d24164ebfd",
+      "size": 337
+    },
+    {
+      "path": "runs/grouped-sales-01-baseline/evaluation.json",
+      "sha256": "1c7a6c6551a275cf668abe0f15ad59cdba0d29186297f3b25645f4c8c729adf0",
+      "size": 118
+    },
+    {
+      "path": "runs/grouped-sales-01-baseline/events.jsonl",
+      "sha256": "4eb8c4d1cacebfa12fab92d7db825fb36de2d60e9d74da30d27f264ff0c0dd24",
+      "size": 5172
+    },
+    {
+      "path": "runs/grouped-sales-01-baseline/instructions.txt",
+      "sha256": "3e2685a8c9d2113a8d884ad2839ad7e3261a09a58550d4bf370cc53ef038ae82",
+      "size": 598
+    },
+    {
+      "path": "runs/grouped-sales-01-baseline/prompt.txt",
+      "sha256": "c0868a28c6b05c870180ed81d64b954d6a15d80dad448c4f33c98b0bbf11a1f7",
+      "size": 67
+    },
+    {
+      "path": "runs/grouped-sales-01-baseline/quota-before.json",
+      "sha256": "4fbd3c1245badc1a6a93ce38a0f05cd978f021bd01bfb98a6a0bf242e776853b",
+      "size": 199
+    },
+    {
+      "path": "runs/grouped-sales-01-baseline/run.json",
+      "sha256": "52c2fe55e04bea0f98f7b88050b472d80d76f86a6d0cbf4a311d8885fc7f8f83",
+      "size": 977
+    },
+    {
+      "path": "runs/grouped-sales-01-baseline/stderr.txt",
+      "sha256": "708257872a8208b126ef04e6f7af2e916cfb531d41623ca2aed970256fd947f9",
+      "size": 366
+    },
+    {
+      "path": "runs/grouped-sales-01-baseline/tools.jsonl",
+      "sha256": "19a6145f0c8671ac388d6224782bf72ad46e3c4e1ef07117dd7adcdfb262c439",
+      "size": 911
+    },
+    {
+      "path": "runs/grouped-sales-01-baseline/workspace/TASK.md",
+      "sha256": "b3a9fdc8eb85d2ddd06e9b9795990cf6ee38f854e20997d59d08ba8414fc1696",
+      "size": 790
+    },
+    {
+      "path": "runs/grouped-sales-01-baseline/workspace/output.json",
+      "sha256": "8ff749bf7050586a4c8701a1c863f582315c65f7e4f9211db3627e06e4d729da",
+      "size": 141
+    },
+    {
+      "path": "runs/grouped-sales-01-baseline/workspace/sales.csv",
+      "sha256": "1d1d7f954ab903576336560e7854486914208afd2b84810ac858e40c324e2374",
+      "size": 237
+    },
+    {
+      "path": "runs/grouped-sales-01-v1/evaluation.json",
+      "sha256": "5c655f101ed463384248b76c429531cac3426965ee262b516d5b9de587080033",
+      "size": 118
+    },
+    {
+      "path": "runs/grouped-sales-01-v1/events.jsonl",
+      "sha256": "0527656fe7f24ee2558736035ea347c5d1aba1d2caf426e70562c9e2711f69e6",
+      "size": 6073
+    },
+    {
+      "path": "runs/grouped-sales-01-v1/instructions.txt",
+      "sha256": "3e2685a8c9d2113a8d884ad2839ad7e3261a09a58550d4bf370cc53ef038ae82",
+      "size": 598
+    },
+    {
+      "path": "runs/grouped-sales-01-v1/prompt.txt",
+      "sha256": "c0868a28c6b05c870180ed81d64b954d6a15d80dad448c4f33c98b0bbf11a1f7",
+      "size": 67
+    },
+    {
+      "path": "runs/grouped-sales-01-v1/quota-before.json",
+      "sha256": "4fbd3c1245badc1a6a93ce38a0f05cd978f021bd01bfb98a6a0bf242e776853b",
+      "size": 199
+    },
+    {
+      "path": "runs/grouped-sales-01-v1/run.json",
+      "sha256": "2a30e41c260b73969a228cbe6818310daaa62eb8f2329967fc21fcb6f301d4f7",
+      "size": 963
+    },
+    {
+      "path": "runs/grouped-sales-01-v1/stderr.txt",
+      "sha256": "2d934373809040d0f06cf1e4c5af9ca66843bf3a75dd2b49071ed2a0787ada70",
+      "size": 366
+    },
+    {
+      "path": "runs/grouped-sales-01-v1/tools.jsonl",
+      "sha256": "910c27440acf84fe3cb749c80297473f3312a96a41088561bcc88e8f623eaf26",
+      "size": 1046
+    },
+    {
+      "path": "runs/grouped-sales-01-v1/workspace/TASK.md",
+      "sha256": "b3a9fdc8eb85d2ddd06e9b9795990cf6ee38f854e20997d59d08ba8414fc1696",
+      "size": 790
+    },
+    {
+      "path": "runs/grouped-sales-01-v1/workspace/output.json",
+      "sha256": "8ff749bf7050586a4c8701a1c863f582315c65f7e4f9211db3627e06e4d729da",
+      "size": 141
+    },
+    {
+      "path": "runs/grouped-sales-01-v1/workspace/sales.csv",
+      "sha256": "1d1d7f954ab903576336560e7854486914208afd2b84810ac858e40c324e2374",
+      "size": 237
+    },
+    {
+      "path": "runs/grouped-sales-01-v2/evaluation.json",
+      "sha256": "c8725ab5da988717706e1075996bfa588357b6b2b9b5c49f85f9279f299fde96",
+      "size": 118
+    },
+    {
+      "path": "runs/grouped-sales-01-v2/events.jsonl",
+      "sha256": "0dccc107ae0538dfb2a8cd90eec99f4163b1df5f7fb9892ef43d8de90369d81f",
+      "size": 7688
+    },
+    {
+      "path": "runs/grouped-sales-01-v2/instructions.txt",
+      "sha256": "3e2685a8c9d2113a8d884ad2839ad7e3261a09a58550d4bf370cc53ef038ae82",
+      "size": 598
+    },
+    {
+      "path": "runs/grouped-sales-01-v2/prompt.txt",
+      "sha256": "c0868a28c6b05c870180ed81d64b954d6a15d80dad448c4f33c98b0bbf11a1f7",
+      "size": 67
+    },
+    {
+      "path": "runs/grouped-sales-01-v2/quota-before.json",
+      "sha256": "4fbd3c1245badc1a6a93ce38a0f05cd978f021bd01bfb98a6a0bf242e776853b",
+      "size": 199
+    },
+    {
+      "path": "runs/grouped-sales-01-v2/run.json",
+      "sha256": "8f64b67f2e8f4d821317adc2abff133859bcd5eecf7f3ce5360a84d985a09bcc",
+      "size": 963
+    },
+    {
+      "path": "runs/grouped-sales-01-v2/stderr.txt",
+      "sha256": "e4e3257b1585c61221f68273fd747f352536664816dfaf6800e5ff6baf5d5b18",
+      "size": 366
+    },
+    {
+      "path": "runs/grouped-sales-01-v2/tools.jsonl",
+      "sha256": "b3c7fee00ab6213535a8b20fda2d283ec8aa2c971298aa6e4b2b292dc168a72f",
+      "size": 1196
+    },
+    {
+      "path": "runs/grouped-sales-01-v2/workspace/TASK.md",
+      "sha256": "b3a9fdc8eb85d2ddd06e9b9795990cf6ee38f854e20997d59d08ba8414fc1696",
+      "size": 790
+    },
+    {
+      "path": "runs/grouped-sales-01-v2/workspace/output.json",
+      "sha256": "8ff749bf7050586a4c8701a1c863f582315c65f7e4f9211db3627e06e4d729da",
+      "size": 141
+    },
+    {
+      "path": "runs/grouped-sales-01-v2/workspace/sales.csv",
+      "sha256": "1d1d7f954ab903576336560e7854486914208afd2b84810ac858e40c324e2374",
+      "size": 237
+    },
+    {
+      "path": "runs/missing-versus-zero-01-baseline/evaluation.json",
+      "sha256": "bd58fafe9722d9381681f6ce97449ff5fc911178e4aa145d258c614df692a416",
+      "size": 118
+    },
+    {
+      "path": "runs/missing-versus-zero-01-baseline/events.jsonl",
+      "sha256": "025633c6c98c949e83e2bd1a7aa357b46a5944a4c6f42efda9d93d4f0c8667f3",
+      "size": 5427
+    },
+    {
+      "path": "runs/missing-versus-zero-01-baseline/instructions.txt",
+      "sha256": "3e2685a8c9d2113a8d884ad2839ad7e3261a09a58550d4bf370cc53ef038ae82",
+      "size": 598
+    },
+    {
+      "path": "runs/missing-versus-zero-01-baseline/prompt.txt",
+      "sha256": "c0868a28c6b05c870180ed81d64b954d6a15d80dad448c4f33c98b0bbf11a1f7",
+      "size": 67
+    },
+    {
+      "path": "runs/missing-versus-zero-01-baseline/quota-before.json",
+      "sha256": "5dcccadd43995c63b35ba2b788137f76f100c8488b02247773cf38cb55f522e0",
+      "size": 199
+    },
+    {
+      "path": "runs/missing-versus-zero-01-baseline/run.json",
+      "sha256": "641e2a4ea2150e9a05121488b96e355d72b1822cc1050f0ef586d3bdc37832ce",
+      "size": 988
+    },
+    {
+      "path": "runs/missing-versus-zero-01-baseline/stderr.txt",
+      "sha256": "de42567782f3ac1355838d7d6c6800a8c86083741e9d670894c159160b547104",
+      "size": 366
+    },
+    {
+      "path": "runs/missing-versus-zero-01-baseline/tools.jsonl",
+      "sha256": "bb402dea210125c4cbd42ee986531e8a1aaf47727cf23c629ce10b81132a1fa7",
+      "size": 902
+    },
+    {
+      "path": "runs/missing-versus-zero-01-baseline/workspace/TASK.md",
+      "sha256": "4bb6b47ffefe6a8b2ce50793447da792afbfe3d35dfc39afe5f56ce087f68107",
+      "size": 832
+    },
+    {
+      "path": "runs/missing-versus-zero-01-baseline/workspace/inventory.csv",
+      "sha256": "4b6743df43bb43c392ed7fafc1398712289e2e2e76fe31504c61466fcd732577",
+      "size": 67
+    },
+    {
+      "path": "runs/missing-versus-zero-01-baseline/workspace/output.json",
+      "sha256": "16d465870ee99a58983ecdd7dfe0cf0a6a94384f9bdff73ab06482fc7f09bb71",
+      "size": 294
+    },
+    {
+      "path": "runs/missing-versus-zero-01-v1/evaluation.json",
+      "sha256": "68c6fe4d63c09629eb76fb5f09859aad76ee43f0804545d5ae6295d206c2168d",
+      "size": 118
+    },
+    {
+      "path": "runs/missing-versus-zero-01-v1/events.jsonl",
+      "sha256": "957aa067498b5c04b50f35a1fe11e8bcd8faddf00c865efc9ea46df51ee8d231",
+      "size": 6336
+    },
+    {
+      "path": "runs/missing-versus-zero-01-v1/instructions.txt",
+      "sha256": "3e2685a8c9d2113a8d884ad2839ad7e3261a09a58550d4bf370cc53ef038ae82",
+      "size": 598
+    },
+    {
+      "path": "runs/missing-versus-zero-01-v1/prompt.txt",
+      "sha256": "c0868a28c6b05c870180ed81d64b954d6a15d80dad448c4f33c98b0bbf11a1f7",
+      "size": 67
+    },
+    {
+      "path": "runs/missing-versus-zero-01-v1/quota-before.json",
+      "sha256": "9971aba1e015bc9974ce71fba6c939809de6fa62fc237ee4e18747f9e3cc66b2",
+      "size": 199
+    },
+    {
+      "path": "runs/missing-versus-zero-01-v1/run.json",
+      "sha256": "244bb208e514443a1f8fbb692e7966c6b15707720ba92d7bc2a5ad47131a61b5",
+      "size": 975
+    },
+    {
+      "path": "runs/missing-versus-zero-01-v1/stderr.txt",
+      "sha256": "50416e04a3a4d663c6aa579d53618b6ed1af773011581c3c338ad800134cfd14",
+      "size": 366
+    },
+    {
+      "path": "runs/missing-versus-zero-01-v1/tools.jsonl",
+      "sha256": "b346d803c949fff94f15d1d90706c15c728df4cc3ae344f48449dd12454e1165",
+      "size": 1053
+    },
+    {
+      "path": "runs/missing-versus-zero-01-v1/workspace/TASK.md",
+      "sha256": "4bb6b47ffefe6a8b2ce50793447da792afbfe3d35dfc39afe5f56ce087f68107",
+      "size": 832
+    },
+    {
+      "path": "runs/missing-versus-zero-01-v1/workspace/inventory.csv",
+      "sha256": "4b6743df43bb43c392ed7fafc1398712289e2e2e76fe31504c61466fcd732577",
+      "size": 67
+    },
+    {
+      "path": "runs/missing-versus-zero-01-v1/workspace/output.json",
+      "sha256": "16d465870ee99a58983ecdd7dfe0cf0a6a94384f9bdff73ab06482fc7f09bb71",
+      "size": 294
+    },
+    {
+      "path": "runs/missing-versus-zero-01-v2/evaluation.json",
+      "sha256": "6ef6c9535bca0cfc47576b8e740d1dc9eb32181df7c9c340fc6bb30b920053a6",
+      "size": 118
+    },
+    {
+      "path": "runs/missing-versus-zero-01-v2/events.jsonl",
+      "sha256": "207a75dd6bfd829a53fefa39b14d19f069b58e8ccbec236d57b64633462b822f",
+      "size": 7283
+    },
+    {
+      "path": "runs/missing-versus-zero-01-v2/instructions.txt",
+      "sha256": "3e2685a8c9d2113a8d884ad2839ad7e3261a09a58550d4bf370cc53ef038ae82",
+      "size": 598
+    },
+    {
+      "path": "runs/missing-versus-zero-01-v2/prompt.txt",
+      "sha256": "c0868a28c6b05c870180ed81d64b954d6a15d80dad448c4f33c98b0bbf11a1f7",
+      "size": 67
+    },
+    {
+      "path": "runs/missing-versus-zero-01-v2/quota-before.json",
+      "sha256": "5dcccadd43995c63b35ba2b788137f76f100c8488b02247773cf38cb55f522e0",
+      "size": 199
+    },
+    {
+      "path": "runs/missing-versus-zero-01-v2/run.json",
+      "sha256": "257e22b3014f6db3fa62ca821cecf07eb16fcce8a5724bf26387ba927757a34e",
+      "size": 975
+    },
+    {
+      "path": "runs/missing-versus-zero-01-v2/stderr.txt",
+      "sha256": "f98836d03c52d0877c3a2d8b14ce7a092dc7449b34fcaad5eab7a853852cd8cb",
+      "size": 366
+    },
+    {
+      "path": "runs/missing-versus-zero-01-v2/tools.jsonl",
+      "sha256": "b435dc2966bb1c80726459dab43e3f8918f4487a5209aa6ecbac0b232caa1273",
+      "size": 1052
+    },
+    {
+      "path": "runs/missing-versus-zero-01-v2/workspace/TASK.md",
+      "sha256": "4bb6b47ffefe6a8b2ce50793447da792afbfe3d35dfc39afe5f56ce087f68107",
+      "size": 832
+    },
+    {
+      "path": "runs/missing-versus-zero-01-v2/workspace/inventory.csv",
+      "sha256": "4b6743df43bb43c392ed7fafc1398712289e2e2e76fe31504c61466fcd732577",
+      "size": 67
+    },
+    {
+      "path": "runs/missing-versus-zero-01-v2/workspace/output.json",
+      "sha256": "16d465870ee99a58983ecdd7dfe0cf0a6a94384f9bdff73ab06482fc7f09bb71",
+      "size": 294
+    },
+    {
+      "path": "runs/payment-reconciliation-01-baseline/evaluation.json",
+      "sha256": "625f010ff3dc1d064c937a6e21c328921f6435409985ddeb9790cd62d74599ff",
+      "size": 118
+    },
+    {
+      "path": "runs/payment-reconciliation-01-baseline/events.jsonl",
+      "sha256": "0888422fadf09b9b59d8057d2b5c7184d780d89883b1f3af3d6c4fcf5d9274f5",
+      "size": 6818
+    },
+    {
+      "path": "runs/payment-reconciliation-01-baseline/instructions.txt",
+      "sha256": "3e2685a8c9d2113a8d884ad2839ad7e3261a09a58550d4bf370cc53ef038ae82",
+      "size": 598
+    },
+    {
+      "path": "runs/payment-reconciliation-01-baseline/prompt.txt",
+      "sha256": "c0868a28c6b05c870180ed81d64b954d6a15d80dad448c4f33c98b0bbf11a1f7",
+      "size": 67
+    },
+    {
+      "path": "runs/payment-reconciliation-01-baseline/quota-before.json",
+      "sha256": "24fd737a49665cdf80be0bee53bb3ed5ddd92aa84fa74ee998b40273843dfb91",
+      "size": 199
+    },
+    {
+      "path": "runs/payment-reconciliation-01-baseline/run.json",
+      "sha256": "e314e8acb701e06d9a97dce54f68ae8b8d72fdfd9350a67e841f5259dc82af01",
+      "size": 994
+    },
+    {
+      "path": "runs/payment-reconciliation-01-baseline/stderr.txt",
+      "sha256": "7bf629e2118532777c757ddbb883a2cdf9493c380be0d4ec72505d771cc542d9",
+      "size": 366
+    },
+    {
+      "path": "runs/payment-reconciliation-01-baseline/tools.jsonl",
+      "sha256": "93ba0df07c9f907f84ab5c8897f3a379f031fc61f561db7ae5134b0127e5ac1b",
+      "size": 1054
+    },
+    {
+      "path": "runs/payment-reconciliation-01-baseline/workspace/TASK.md",
+      "sha256": "73da9af4b4c87004368b6e2d2cd301121152704ad7746b86bea83c3ed8a7e61c",
+      "size": 818
+    },
+    {
+      "path": "runs/payment-reconciliation-01-baseline/workspace/invoices.csv",
+      "sha256": "2bb1b50482ac2aff2347b2f13a8a2c0c2d180ee3bf2c3f8a25a063e685e27ef1",
+      "size": 53
+    },
+    {
+      "path": "runs/payment-reconciliation-01-baseline/workspace/output.json",
+      "sha256": "256fecf1195f007468a40019c07c621a25d3c4bc45fd8ec53e6aa01ea9dae51c",
+      "size": 628
+    },
+    {
+      "path": "runs/payment-reconciliation-01-baseline/workspace/payments.csv",
+      "sha256": "8d3ca396e7d17fc6f693ddca9ac9e3a2a0b71d95b7a641d061a81c5543afe1f6",
+      "size": 91
+    },
+    {
+      "path": "runs/payment-reconciliation-01-v1/evaluation.json",
+      "sha256": "9517921bf322d798bb215b2eb325c7df2bacbe0d95cdd1c5b7a81f405c1dc35f",
+      "size": 117
+    },
+    {
+      "path": "runs/payment-reconciliation-01-v1/events.jsonl",
+      "sha256": "7b09a08f209cd94059821dc8b586d8bb934539e32f12c255215cb74d5581a333",
+      "size": 7727
+    },
+    {
+      "path": "runs/payment-reconciliation-01-v1/instructions.txt",
+      "sha256": "3e2685a8c9d2113a8d884ad2839ad7e3261a09a58550d4bf370cc53ef038ae82",
+      "size": 598
+    },
+    {
+      "path": "runs/payment-reconciliation-01-v1/prompt.txt",
+      "sha256": "c0868a28c6b05c870180ed81d64b954d6a15d80dad448c4f33c98b0bbf11a1f7",
+      "size": 67
+    },
+    {
+      "path": "runs/payment-reconciliation-01-v1/quota-before.json",
+      "sha256": "24fd737a49665cdf80be0bee53bb3ed5ddd92aa84fa74ee998b40273843dfb91",
+      "size": 199
+    },
+    {
+      "path": "runs/payment-reconciliation-01-v1/run.json",
+      "sha256": "725402d981acf7d7854cb002e8e73612ef8aba9ba08c6ac1b513029347ee66b0",
+      "size": 981
+    },
+    {
+      "path": "runs/payment-reconciliation-01-v1/stderr.txt",
+      "sha256": "fb8b895245d84971599d780d4f015e06c5a2bcbb908b4f8b0bd123a858cf1b51",
+      "size": 366
+    },
+    {
+      "path": "runs/payment-reconciliation-01-v1/tools.jsonl",
+      "sha256": "50387c69aa83c5684874b2d9eb42909495076afe24486f3b2a4c29371c886843",
+      "size": 1201
+    },
+    {
+      "path": "runs/payment-reconciliation-01-v1/workspace/TASK.md",
+      "sha256": "73da9af4b4c87004368b6e2d2cd301121152704ad7746b86bea83c3ed8a7e61c",
+      "size": 818
+    },
+    {
+      "path": "runs/payment-reconciliation-01-v1/workspace/invoices.csv",
+      "sha256": "2bb1b50482ac2aff2347b2f13a8a2c0c2d180ee3bf2c3f8a25a063e685e27ef1",
+      "size": 53
+    },
+    {
+      "path": "runs/payment-reconciliation-01-v1/workspace/output.json",
+      "sha256": "7684dcaa8e9413f5267c2b62f6441b564526617eab92adbefc15d1608f81458d",
+      "size": 629
+    },
+    {
+      "path": "runs/payment-reconciliation-01-v1/workspace/payments.csv",
+      "sha256": "8d3ca396e7d17fc6f693ddca9ac9e3a2a0b71d95b7a641d061a81c5543afe1f6",
+      "size": 91
+    },
+    {
+      "path": "runs/payment-reconciliation-01-v2/evaluation.json",
+      "sha256": "cbf43365ae607f8be026d31d4b29ba88d7c74b5750615319b52c1e1511bcd81a",
+      "size": 118
+    },
+    {
+      "path": "runs/payment-reconciliation-01-v2/events.jsonl",
+      "sha256": "2d02fd4ad36eaa8f430b35d1e20b28efd1c406c42c5f0eb6f91b0a4f163f8e83",
+      "size": 9224
+    },
+    {
+      "path": "runs/payment-reconciliation-01-v2/instructions.txt",
+      "sha256": "3e2685a8c9d2113a8d884ad2839ad7e3261a09a58550d4bf370cc53ef038ae82",
+      "size": 598
+    },
+    {
+      "path": "runs/payment-reconciliation-01-v2/prompt.txt",
+      "sha256": "c0868a28c6b05c870180ed81d64b954d6a15d80dad448c4f33c98b0bbf11a1f7",
+      "size": 67
+    },
+    {
+      "path": "runs/payment-reconciliation-01-v2/quota-before.json",
+      "sha256": "24fd737a49665cdf80be0bee53bb3ed5ddd92aa84fa74ee998b40273843dfb91",
+      "size": 199
+    },
+    {
+      "path": "runs/payment-reconciliation-01-v2/run.json",
+      "sha256": "08dcb34dbcb91266e5a112ede2fcbb0b15bd8f75ef6020e799bfa473c2e0d544",
+      "size": 981
+    },
+    {
+      "path": "runs/payment-reconciliation-01-v2/stderr.txt",
+      "sha256": "c55563ef221b7b4f55337976b0888ac82542266b7839795a18834f24f1dd60a8",
+      "size": 366
+    },
+    {
+      "path": "runs/payment-reconciliation-01-v2/tools.jsonl",
+      "sha256": "dcfcd72333045f64048b5b28b8d6cb7742970913e3c9baa8172287a4b05b0e0c",
+      "size": 1350
+    },
+    {
+      "path": "runs/payment-reconciliation-01-v2/workspace/TASK.md",
+      "sha256": "73da9af4b4c87004368b6e2d2cd301121152704ad7746b86bea83c3ed8a7e61c",
+      "size": 818
+    },
+    {
+      "path": "runs/payment-reconciliation-01-v2/workspace/invoices.csv",
+      "sha256": "2bb1b50482ac2aff2347b2f13a8a2c0c2d180ee3bf2c3f8a25a063e685e27ef1",
+      "size": 53
+    },
+    {
+      "path": "runs/payment-reconciliation-01-v2/workspace/output.json",
+      "sha256": "b3738df3f08ff43bb1e8698469af7bf1402bb3f0a23e64320b191f4a434f68be",
+      "size": 408
+    },
+    {
+      "path": "runs/payment-reconciliation-01-v2/workspace/payments.csv",
+      "sha256": "8d3ca396e7d17fc6f693ddca9ac9e3a2a0b71d95b7a641d061a81c5543afe1f6",
+      "size": 91
+    },
+    {
+      "path": "runs/schema-validation-01-baseline/evaluation.json",
+      "sha256": "ca723b5b52af1347284b760889140f7d05f92e819f1d1129830accd3f3bcbe2e",
+      "size": 118
+    },
+    {
+      "path": "runs/schema-validation-01-baseline/events.jsonl",
+      "sha256": "779f2ebbfeab3a9725d7e1c677f6ae6fecfd228b8031debc51e85eb088574342",
+      "size": 6740
+    },
+    {
+      "path": "runs/schema-validation-01-baseline/instructions.txt",
+      "sha256": "3e2685a8c9d2113a8d884ad2839ad7e3261a09a58550d4bf370cc53ef038ae82",
+      "size": 598
+    },
+    {
+      "path": "runs/schema-validation-01-baseline/prompt.txt",
+      "sha256": "c0868a28c6b05c870180ed81d64b954d6a15d80dad448c4f33c98b0bbf11a1f7",
+      "size": 67
+    },
+    {
+      "path": "runs/schema-validation-01-baseline/quota-before.json",
+      "sha256": "24fd737a49665cdf80be0bee53bb3ed5ddd92aa84fa74ee998b40273843dfb91",
+      "size": 199
+    },
+    {
+      "path": "runs/schema-validation-01-baseline/run.json",
+      "sha256": "9e09355fe458e0bc14e01ed705eb479fbbf4bb101b71ca6b1ef014203d003db0",
+      "size": 985
+    },
+    {
+      "path": "runs/schema-validation-01-baseline/stderr.txt",
+      "sha256": "00160fa015963f8663eb9667481b22418ed54dcdc12d259544ca9d1c45d6e585",
+      "size": 366
+    },
+    {
+      "path": "runs/schema-validation-01-baseline/tools.jsonl",
+      "sha256": "f313ad71cfaa0d7c1fc39d5ef5348fdde3e8daec18dd72f9ad486e5530b46ade",
+      "size": 903
+    },
+    {
+      "path": "runs/schema-validation-01-baseline/workspace/TASK.md",
+      "sha256": "56964016f6eeb9f2ccb411ba10b4a59bbc94436332f558ee52470fc576fd0ed6",
+      "size": 1005
+    },
+    {
+      "path": "runs/schema-validation-01-baseline/workspace/output.json",
+      "sha256": "95fcb04057ba3992e46d54f409b7174dc55d4733ea8341002cf3ed8355f4caac",
+      "size": 298
+    },
+    {
+      "path": "runs/schema-validation-01-baseline/workspace/records.json",
+      "sha256": "e6145d3d949c112da1d9ed5c1c7c9e50facb250bc058d2b5bee56c1db8a8c99d",
+      "size": 754
+    },
+    {
+      "path": "runs/schema-validation-01-v1/evaluation.json",
+      "sha256": "6ccbc177bf63eb7270a3b16300420acaa4258c640afdc0e5eb4aea79cb5f1344",
+      "size": 118
+    },
+    {
+      "path": "runs/schema-validation-01-v1/events.jsonl",
+      "sha256": "e750629df607dd2c158231b85a8927c33d2edbc7e2c1faa9dd73c56b76ba8c48",
+      "size": 8413
+    },
+    {
+      "path": "runs/schema-validation-01-v1/instructions.txt",
+      "sha256": "3e2685a8c9d2113a8d884ad2839ad7e3261a09a58550d4bf370cc53ef038ae82",
+      "size": 598
+    },
+    {
+      "path": "runs/schema-validation-01-v1/prompt.txt",
+      "sha256": "c0868a28c6b05c870180ed81d64b954d6a15d80dad448c4f33c98b0bbf11a1f7",
+      "size": 67
+    },
+    {
+      "path": "runs/schema-validation-01-v1/quota-before.json",
+      "sha256": "24fd737a49665cdf80be0bee53bb3ed5ddd92aa84fa74ee998b40273843dfb91",
+      "size": 199
+    },
+    {
+      "path": "runs/schema-validation-01-v1/run.json",
+      "sha256": "84f475ef37be7c59ae3458237257362eac37ebe4e998b3f5970b392bc4480b52",
+      "size": 972
+    },
+    {
+      "path": "runs/schema-validation-01-v1/stderr.txt",
+      "sha256": "89411c6762edc49f5a5b1f68e85c4bd0588f6f9e86dc5472ccc19e10f09e4468",
+      "size": 366
+    },
+    {
+      "path": "runs/schema-validation-01-v1/tools.jsonl",
+      "sha256": "d61c17346e9f252daccd96ed5d9bba7b9cf0867698bfcca282bcb80456cdbdca",
+      "size": 1051
+    },
+    {
+      "path": "runs/schema-validation-01-v1/workspace/TASK.md",
+      "sha256": "56964016f6eeb9f2ccb411ba10b4a59bbc94436332f558ee52470fc576fd0ed6",
+      "size": 1005
+    },
+    {
+      "path": "runs/schema-validation-01-v1/workspace/output.json",
+      "sha256": "c2af9d3d5bf8bdf23428e398ba53a4f126da857091a16367f7409562a0624b40",
+      "size": 640
+    },
+    {
+      "path": "runs/schema-validation-01-v1/workspace/records.json",
+      "sha256": "e6145d3d949c112da1d9ed5c1c7c9e50facb250bc058d2b5bee56c1db8a8c99d",
+      "size": 754
+    },
+    {
+      "path": "runs/schema-validation-01-v2/evaluation.json",
+      "sha256": "5fe8bfe641ddbf2a517fec10aeb370d90746e8b717e8d5796bb2f30c80f52930",
+      "size": 118
+    },
+    {
+      "path": "runs/schema-validation-01-v2/events.jsonl",
+      "sha256": "ab38071a1b22a68d9924fa95956d70560223f73ecce297fd54136a754ce70bff",
+      "size": 9504
+    },
+    {
+      "path": "runs/schema-validation-01-v2/instructions.txt",
+      "sha256": "3e2685a8c9d2113a8d884ad2839ad7e3261a09a58550d4bf370cc53ef038ae82",
+      "size": 598
+    },
+    {
+      "path": "runs/schema-validation-01-v2/prompt.txt",
+      "sha256": "c0868a28c6b05c870180ed81d64b954d6a15d80dad448c4f33c98b0bbf11a1f7",
+      "size": 67
+    },
+    {
+      "path": "runs/schema-validation-01-v2/quota-before.json",
+      "sha256": "24fd737a49665cdf80be0bee53bb3ed5ddd92aa84fa74ee998b40273843dfb91",
+      "size": 199
+    },
+    {
+      "path": "runs/schema-validation-01-v2/run.json",
+      "sha256": "09dc1e99574555aa06b6ae106471dfd3e122782d9ba290f11749a2918ad75167",
+      "size": 972
+    },
+    {
+      "path": "runs/schema-validation-01-v2/stderr.txt",
+      "sha256": "bb38a404e54347454b9e58752d0f92ff81f7408c55c9f1dd7dad9561811c3116",
+      "size": 366
+    },
+    {
+      "path": "runs/schema-validation-01-v2/tools.jsonl",
+      "sha256": "979323058f4771d582715c0a30cb83b057faa4124149a46692bde680bb885af9",
+      "size": 1198
+    },
+    {
+      "path": "runs/schema-validation-01-v2/workspace/TASK.md",
+      "sha256": "56964016f6eeb9f2ccb411ba10b4a59bbc94436332f558ee52470fc576fd0ed6",
+      "size": 1005
+    },
+    {
+      "path": "runs/schema-validation-01-v2/workspace/output.json",
+      "sha256": "95fcb04057ba3992e46d54f409b7174dc55d4733ea8341002cf3ed8355f4caac",
+      "size": 298
+    },
+    {
+      "path": "runs/schema-validation-01-v2/workspace/records.json",
+      "sha256": "e6145d3d949c112da1d9ed5c1c7c9e50facb250bc058d2b5bee56c1db8a8c99d",
+      "size": 754
+    },
+    {
+      "path": "runs/stable-ranking-01-baseline/evaluation.json",
+      "sha256": "8749d92acfe20c0b0bb24847a1d5caea927bb99be1322b5ed3d155cc9675495f",
+      "size": 118
+    },
+    {
+      "path": "runs/stable-ranking-01-baseline/events.jsonl",
+      "sha256": "4fcb57156b478c66ad75dd3944e7088f7924fadeabf8a6fb391542810ed4714f",
+      "size": 4938
+    },
+    {
+      "path": "runs/stable-ranking-01-baseline/instructions.txt",
+      "sha256": "3e2685a8c9d2113a8d884ad2839ad7e3261a09a58550d4bf370cc53ef038ae82",
+      "size": 598
+    },
+    {
+      "path": "runs/stable-ranking-01-baseline/prompt.txt",
+      "sha256": "c0868a28c6b05c870180ed81d64b954d6a15d80dad448c4f33c98b0bbf11a1f7",
+      "size": 67
+    },
+    {
+      "path": "runs/stable-ranking-01-baseline/quota-before.json",
+      "sha256": "4fbd3c1245badc1a6a93ce38a0f05cd978f021bd01bfb98a6a0bf242e776853b",
+      "size": 199
+    },
+    {
+      "path": "runs/stable-ranking-01-baseline/run.json",
+      "sha256": "3f14d0ffaf3a822553cc886c74ecc0dbede8d13398e1ff7ebb77e29fe2a513e5",
+      "size": 978
+    },
+    {
+      "path": "runs/stable-ranking-01-baseline/stderr.txt",
+      "sha256": "aff13fa57710118e682dcfc19821f8ccfc4ed1c1d37af1e6460e506544d5594b",
+      "size": 366
+    },
+    {
+      "path": "runs/stable-ranking-01-baseline/tools.jsonl",
+      "sha256": "a22f96e8ac6ac77b95667e8f11f8e2f508148dad43b152c47da4893fca8d54b0",
+      "size": 901
+    },
+    {
+      "path": "runs/stable-ranking-01-baseline/workspace/TASK.md",
+      "sha256": "c8e9350dbf02aff1ec58634c404777472eca1f553f7f18f747dc33e26a01fc12",
+      "size": 613
+    },
+    {
+      "path": "runs/stable-ranking-01-baseline/workspace/output.json",
+      "sha256": "44fa2835055c84e51729c7d94e529864bc9ec576f6debf2465124154c352d0d3",
+      "size": 168
+    },
+    {
+      "path": "runs/stable-ranking-01-baseline/workspace/scores.csv",
+      "sha256": "614f58035c240ceaccd18dd96828db53b741c69ae1fa081a15d9c7a61a6ce0af",
+      "size": 69
+    },
+    {
+      "path": "runs/stable-ranking-01-v1/evaluation.json",
+      "sha256": "dee195a86a6dc69d42fddb720196667c9a028f6c756127a3757f1fafd1ea9099",
+      "size": 118
+    },
+    {
+      "path": "runs/stable-ranking-01-v1/events.jsonl",
+      "sha256": "09165958eabb12968bf2bf3e40e038d5bd1207895030e51ca50e346362c132f4",
+      "size": 5838
+    },
+    {
+      "path": "runs/stable-ranking-01-v1/instructions.txt",
+      "sha256": "3e2685a8c9d2113a8d884ad2839ad7e3261a09a58550d4bf370cc53ef038ae82",
+      "size": 598
+    },
+    {
+      "path": "runs/stable-ranking-01-v1/prompt.txt",
+      "sha256": "c0868a28c6b05c870180ed81d64b954d6a15d80dad448c4f33c98b0bbf11a1f7",
+      "size": 67
+    },
+    {
+      "path": "runs/stable-ranking-01-v1/quota-before.json",
+      "sha256": "4fbd3c1245badc1a6a93ce38a0f05cd978f021bd01bfb98a6a0bf242e776853b",
+      "size": 199
+    },
+    {
+      "path": "runs/stable-ranking-01-v1/run.json",
+      "sha256": "b2394b84dfe68bdb42ddb71fd15114a42b39e88a5c35f3263607765c244d80ed",
+      "size": 965
+    },
+    {
+      "path": "runs/stable-ranking-01-v1/stderr.txt",
+      "sha256": "808c68b577f194786e26e9cb1eabace234ec6832a1cecf0df3f12e838feb1bec",
+      "size": 366
+    },
+    {
+      "path": "runs/stable-ranking-01-v1/tools.jsonl",
+      "sha256": "46d53273b5621f981f4fd7250b8d383f3442918d577565193841d86767dab440",
+      "size": 1048
+    },
+    {
+      "path": "runs/stable-ranking-01-v1/workspace/TASK.md",
+      "sha256": "c8e9350dbf02aff1ec58634c404777472eca1f553f7f18f747dc33e26a01fc12",
+      "size": 613
+    },
+    {
+      "path": "runs/stable-ranking-01-v1/workspace/output.json",
+      "sha256": "44fa2835055c84e51729c7d94e529864bc9ec576f6debf2465124154c352d0d3",
+      "size": 168
+    },
+    {
+      "path": "runs/stable-ranking-01-v1/workspace/scores.csv",
+      "sha256": "614f58035c240ceaccd18dd96828db53b741c69ae1fa081a15d9c7a61a6ce0af",
+      "size": 69
+    },
+    {
+      "path": "runs/stable-ranking-01-v2/evaluation.json",
+      "sha256": "59596d185c9afd8f1033e9540cf1bdaa2e393cb2cf6829f7fac9c929e13fb1b7",
+      "size": 117
+    },
+    {
+      "path": "runs/stable-ranking-01-v2/events.jsonl",
+      "sha256": "8050f188bedeacc88e6cf41e421701900ba221c5de69620a35f3e834ea47120d",
+      "size": 6786
+    },
+    {
+      "path": "runs/stable-ranking-01-v2/instructions.txt",
+      "sha256": "3e2685a8c9d2113a8d884ad2839ad7e3261a09a58550d4bf370cc53ef038ae82",
+      "size": 598
+    },
+    {
+      "path": "runs/stable-ranking-01-v2/prompt.txt",
+      "sha256": "c0868a28c6b05c870180ed81d64b954d6a15d80dad448c4f33c98b0bbf11a1f7",
+      "size": 67
+    },
+    {
+      "path": "runs/stable-ranking-01-v2/quota-before.json",
+      "sha256": "4fbd3c1245badc1a6a93ce38a0f05cd978f021bd01bfb98a6a0bf242e776853b",
+      "size": 199
+    },
+    {
+      "path": "runs/stable-ranking-01-v2/run.json",
+      "sha256": "fdef8bfd9103ec6a16e23a380438ef56b83dbff8b04e8a4b480b1b282cee72d6",
+      "size": 963
+    },
+    {
+      "path": "runs/stable-ranking-01-v2/stderr.txt",
+      "sha256": "b9a6b7915f6a9f3d65fcdd42df0df35dc7c61443388e777f37d3389c975997df",
+      "size": 366
+    },
+    {
+      "path": "runs/stable-ranking-01-v2/tools.jsonl",
+      "sha256": "34ed81c06b4147d7ac2dee1c0f6c285bf2ef7b7e3e265859b24b8b5fb22aaee3",
+      "size": 1049
+    },
+    {
+      "path": "runs/stable-ranking-01-v2/workspace/TASK.md",
+      "sha256": "c8e9350dbf02aff1ec58634c404777472eca1f553f7f18f747dc33e26a01fc12",
+      "size": 613
+    },
+    {
+      "path": "runs/stable-ranking-01-v2/workspace/output.json",
+      "sha256": "44fa2835055c84e51729c7d94e529864bc9ec576f6debf2465124154c352d0d3",
+      "size": 168
+    },
+    {
+      "path": "runs/stable-ranking-01-v2/workspace/scores.csv",
+      "sha256": "614f58035c240ceaccd18dd96828db53b741c69ae1fa081a15d9c7a61a6ce0af",
+      "size": 69
+    },
+    {
+      "path": "runs/timezone-events-01-baseline/evaluation.json",
+      "sha256": "bbed87d82893f0060288e8500e0164eea6416f09615f03292820a821b8b3d118",
+      "size": 118
+    },
+    {
+      "path": "runs/timezone-events-01-baseline/events.jsonl",
+      "sha256": "7fbb5438f2d9d21332602f89ff61a5c2bb0fb3004d9deb106eefa04825ba7837",
+      "size": 5107
+    },
+    {
+      "path": "runs/timezone-events-01-baseline/instructions.txt",
+      "sha256": "3e2685a8c9d2113a8d884ad2839ad7e3261a09a58550d4bf370cc53ef038ae82",
+      "size": 598
+    },
+    {
+      "path": "runs/timezone-events-01-baseline/prompt.txt",
+      "sha256": "c0868a28c6b05c870180ed81d64b954d6a15d80dad448c4f33c98b0bbf11a1f7",
+      "size": 67
+    },
+    {
+      "path": "runs/timezone-events-01-baseline/quota-before.json",
+      "sha256": "4fbd3c1245badc1a6a93ce38a0f05cd978f021bd01bfb98a6a0bf242e776853b",
+      "size": 199
+    },
+    {
+      "path": "runs/timezone-events-01-baseline/run.json",
+      "sha256": "5f896cb291e52404d6175cc15dc23dcd69d823d7aaa7f7f88eeea9f61e0a7371",
+      "size": 981
+    },
+    {
+      "path": "runs/timezone-events-01-baseline/stderr.txt",
+      "sha256": "1021dc388d7afe0f2ad9173ca628e7f3a28d6a08c0df6031695f535ae3ed5a9b",
+      "size": 366
+    },
+    {
+      "path": "runs/timezone-events-01-baseline/tools.jsonl",
+      "sha256": "0168b6bba9e88cc8236b57efb27279a14ac1882407de3c337712bf796b39e86b",
+      "size": 900
+    },
+    {
+      "path": "runs/timezone-events-01-baseline/workspace/TASK.md",
+      "sha256": "12c134b784695d43f57957f54f074818a49bc425ed45a2e8170801bc49fe6977",
+      "size": 759
+    },
+    {
+      "path": "runs/timezone-events-01-baseline/workspace/events.csv",
+      "sha256": "1c22425abb461d9c07ce572dc109a81601065f069229182941c1220da2abbc06",
+      "size": 166
+    },
+    {
+      "path": "runs/timezone-events-01-baseline/workspace/output.json",
+      "sha256": "e902d491602f0b97c083a9ffd1c406095b7d4d6542864c2c7b0c295784dcc26c",
+      "size": 165
+    },
+    {
+      "path": "runs/timezone-events-01-v1/evaluation.json",
+      "sha256": "79c23920f51a3c436449704e9ead3ab8260c7ab25275d1c267fccdceff1af39a",
+      "size": 118
+    },
+    {
+      "path": "runs/timezone-events-01-v1/events.jsonl",
+      "sha256": "c514668d0615a1bad7f077298e2d5ef41a105003267065dc74b739c8f2e5de78",
+      "size": 6024
+    },
+    {
+      "path": "runs/timezone-events-01-v1/instructions.txt",
+      "sha256": "3e2685a8c9d2113a8d884ad2839ad7e3261a09a58550d4bf370cc53ef038ae82",
+      "size": 598
+    },
+    {
+      "path": "runs/timezone-events-01-v1/prompt.txt",
+      "sha256": "c0868a28c6b05c870180ed81d64b954d6a15d80dad448c4f33c98b0bbf11a1f7",
+      "size": 67
+    },
+    {
+      "path": "runs/timezone-events-01-v1/quota-before.json",
+      "sha256": "4fbd3c1245badc1a6a93ce38a0f05cd978f021bd01bfb98a6a0bf242e776853b",
+      "size": 199
+    },
+    {
+      "path": "runs/timezone-events-01-v1/run.json",
+      "sha256": "f23d1f1e4f00ae034838eb0339ee8eafed777ed3280d40dbee0eeee681ede46b",
+      "size": 967
+    },
+    {
+      "path": "runs/timezone-events-01-v1/stderr.txt",
+      "sha256": "a90aa4f03df3e118d9666e1307fc0917fecf20eb4e85d252d9ba03af6e72d5d6",
+      "size": 366
+    },
+    {
+      "path": "runs/timezone-events-01-v1/tools.jsonl",
+      "sha256": "e8851324a891df7aefae42566c57b8176693946d010f1f73793a6c8f7596634c",
+      "size": 1049
+    },
+    {
+      "path": "runs/timezone-events-01-v1/workspace/TASK.md",
+      "sha256": "12c134b784695d43f57957f54f074818a49bc425ed45a2e8170801bc49fe6977",
+      "size": 759
+    },
+    {
+      "path": "runs/timezone-events-01-v1/workspace/events.csv",
+      "sha256": "1c22425abb461d9c07ce572dc109a81601065f069229182941c1220da2abbc06",
+      "size": 166
+    },
+    {
+      "path": "runs/timezone-events-01-v1/workspace/output.json",
+      "sha256": "e902d491602f0b97c083a9ffd1c406095b7d4d6542864c2c7b0c295784dcc26c",
+      "size": 165
+    },
+    {
+      "path": "runs/timezone-events-01-v2/evaluation.json",
+      "sha256": "5295783f37e6742278e71f7d855201bbfc4da0949f240416b1a9ed8bbb98fc4e",
+      "size": 117
+    },
+    {
+      "path": "runs/timezone-events-01-v2/events.jsonl",
+      "sha256": "4b86bc121a3ff2ca104d8eaf8753cbf23ef66e684f87aa119ed878aaf1fd2256",
+      "size": 7662
+    },
+    {
+      "path": "runs/timezone-events-01-v2/instructions.txt",
+      "sha256": "3e2685a8c9d2113a8d884ad2839ad7e3261a09a58550d4bf370cc53ef038ae82",
+      "size": 598
+    },
+    {
+      "path": "runs/timezone-events-01-v2/prompt.txt",
+      "sha256": "c0868a28c6b05c870180ed81d64b954d6a15d80dad448c4f33c98b0bbf11a1f7",
+      "size": 67
+    },
+    {
+      "path": "runs/timezone-events-01-v2/quota-before.json",
+      "sha256": "4fbd3c1245badc1a6a93ce38a0f05cd978f021bd01bfb98a6a0bf242e776853b",
+      "size": 199
+    },
+    {
+      "path": "runs/timezone-events-01-v2/run.json",
+      "sha256": "aeeb153505e3d4f9f90fbfae14a13e74e53f7c735c6f674ad0648c5dcce90a0b",
+      "size": 966
+    },
+    {
+      "path": "runs/timezone-events-01-v2/stderr.txt",
+      "sha256": "920772930f56473fedbdd2a4cf2768a38846ab226896f56f15ada0a479fbf508",
+      "size": 366
+    },
+    {
+      "path": "runs/timezone-events-01-v2/tools.jsonl",
+      "sha256": "2792ad3cf22da19b9fc279040bf0eadc1931a99e6bbf24ca6b2b4a67dbbcab99",
+      "size": 1199
+    },
+    {
+      "path": "runs/timezone-events-01-v2/workspace/TASK.md",
+      "sha256": "12c134b784695d43f57957f54f074818a49bc425ed45a2e8170801bc49fe6977",
+      "size": 759
+    },
+    {
+      "path": "runs/timezone-events-01-v2/workspace/events.csv",
+      "sha256": "1c22425abb461d9c07ce572dc109a81601065f069229182941c1220da2abbc06",
+      "size": 166
+    },
+    {
+      "path": "runs/timezone-events-01-v2/workspace/output.json",
+      "sha256": "e902d491602f0b97c083a9ffd1c406095b7d4d6542864c2c7b0c295784dcc26c",
+      "size": 165
+    },
+    {
+      "path": "snapshot/experiment.yaml",
+      "sha256": "22b4eebb4a76ab429b594279bed8fe305438cd8f218ad5387977befd1d34f7c0",
+      "size": 540
+    },
+    {
+      "path": "snapshot/implementation/__init__.py",
+      "sha256": "3d77d4b01d314e09f81ec3bfa52e4f24bf1c5432b778f20ffa7e5181f7cacc4e",
+      "size": 71
+    },
+    {
+      "path": "snapshot/implementation/analysis_v2.py",
+      "sha256": "c885080c4409d28b0926dab554cddc6f32cd02f286fee36efe19ee49b7d09bcf",
+      "size": 11871
+    },
+    {
+      "path": "snapshot/implementation/benchmark.py",
+      "sha256": "b5bddf540e9024a2813b4eac1be1a3c0f0f48661fc1dc9bd307e502ddb96a362",
+      "size": 3438
+    },
+    {
+      "path": "snapshot/implementation/cli.py",
+      "sha256": "8c3ffc624576b9cb3a53401fc072698f627b37e0335ca43291e58d4a1868719a",
+      "size": 7544
+    },
+    {
+      "path": "snapshot/implementation/codex_runner.py",
+      "sha256": "9129a910dc6e3e48ad7e4c93959906805cfa182e3a0a21dde222bff5ae0ad2dc",
+      "size": 11671
+    },
+    {
+      "path": "snapshot/implementation/engine.py",
+      "sha256": "8b55127ca3f2f1fc52bcfe052c215c2c225ccaf89f54ef626d6b9cd741e6467e",
+      "size": 7885
+    },
+    {
+      "path": "snapshot/implementation/evidence.py",
+      "sha256": "e4786db28ab25a3b87616824c8f45699478a915dfeac895434fdcdaa695d41bf",
+      "size": 10562
+    },
+    {
+      "path": "snapshot/implementation/report.html.j2",
+      "sha256": "b7bd4a58800d3937eb5c0088732ef59fd9a5825af88a21fc85152479503fb07f",
+      "size": 4259
+    },
+    {
+      "path": "snapshot/implementation/report.py",
+      "sha256": "3ffd80cab76c6ecf7550d594f6aca9914361ea48862628dea4e3b67a0795c1d8",
+      "size": 1244
+    },
+    {
+      "path": "snapshot/implementation/report_v2.html.j2",
+      "sha256": "c5df14d9b66787126892f2a5ababa3de61db903cd5c4406d141e29cd7483bca9",
+      "size": 5923
+    },
+    {
+      "path": "snapshot/implementation/suite.py",
+      "sha256": "07aa494406b9896c133d21a46b6dc18e3d3fb11ed20b33c209347e52f870f0ec",
+      "size": 17312
+    },
+    {
+      "path": "snapshot/implementation/workspace_mcp.py",
+      "sha256": "5a342a75bb7afdf8bdd8aada95d2193c618ebd3821625c29854bbcb67a1073fe",
+      "size": 17648
+    },
+    {
+      "path": "snapshot/skills/v1/SKILL.md",
+      "sha256": "43b29426ea298bfcec8a60639bb13898413c7eaf5188c7a906f95a9299878eb7",
+      "size": 401
+    },
+    {
+      "path": "snapshot/skills/v2/SKILL.md",
+      "sha256": "a63d2f1a4dde086b9aa99168928614e6f6bb621ca6d00bad0bdf7ea66d640691",
+      "size": 1322
+    },
+    {
+      "path": "snapshot/suite/contact-dedupe/fixture/TASK.md",
+      "sha256": "3a9059f032abb9196274b68e6a0ecad9b2245373b42934da97cda2af13e1921d",
+      "size": 733
+    },
+    {
+      "path": "snapshot/suite/contact-dedupe/fixture/contacts.csv",
+      "sha256": "d350612667b6c59ca011873af136f4ba2307129ca22afec8ac4d0c97f775441f",
+      "size": 243
+    },
+    {
+      "path": "snapshot/suite/contact-dedupe/oracle/output.json",
+      "sha256": "f7e51f9b1f1ccc0bfacd1a7c0375f44cf53854378054f7923d1b207cec28f4c2",
+      "size": 409
+    },
+    {
+      "path": "snapshot/suite/contact-dedupe/task.json",
+      "sha256": "e4f2e9c7cd1a0292ddc04d7a10ee6b7cac284f0bc319528beb534c60e47b5d05",
+      "size": 1002
+    },
+    {
+      "path": "snapshot/suite/contact-dedupe/verifier.py",
+      "sha256": "7c37b7bc68a0a046db09823889d2472b78aba36d2a41477b68494c5029bebce5",
+      "size": 2094
+    },
+    {
+      "path": "snapshot/suite/csv-cleanup/fixture/TASK.md",
+      "sha256": "a6a540d3a4ffc6c5d665eb12717a0573f8da0c211727fc30be7d22a82397c973",
+      "size": 752
+    },
+    {
+      "path": "snapshot/suite/csv-cleanup/fixture/contacts.csv",
+      "sha256": "8c7747777bd892005d63ececd24f2fa86d851ba147aa3086ae59542967cb40be",
+      "size": 288
+    },
+    {
+      "path": "snapshot/suite/csv-cleanup/oracle/output.json",
+      "sha256": "6e84d4fb33a5697acf9398fb9b2de9f5c80f635a2d422712fcf35a1e3ca34286",
+      "size": 570
+    },
+    {
+      "path": "snapshot/suite/csv-cleanup/task.json",
+      "sha256": "9993376ff6560cf55fcbf57fd6c471fdcea38eb25aeca0791d3e0f574eba63fa",
+      "size": 1004
+    },
+    {
+      "path": "snapshot/suite/csv-cleanup/verifier.py",
+      "sha256": "7c37b7bc68a0a046db09823889d2472b78aba36d2a41477b68494c5029bebce5",
+      "size": 2094
+    },
+    {
+      "path": "snapshot/suite/customer-join/fixture/TASK.md",
+      "sha256": "a45874f475b44369fb801de6b310475099fb3d5b3fcea90dc61beea0e2f0c948",
+      "size": 801
+    },
+    {
+      "path": "snapshot/suite/customer-join/fixture/customers.csv",
+      "sha256": "56c02035c1f28c6c101f76d3c17f17639c4bb31c24f9653356f75080e39185bb",
+      "size": 47
+    },
+    {
+      "path": "snapshot/suite/customer-join/fixture/orders.csv",
+      "sha256": "e803e59af700848442635d2b04c6c510d68d0e9980cae5fcb9a22df1a125693b",
+      "size": 78
+    },
+    {
+      "path": "snapshot/suite/customer-join/oracle/output.json",
+      "sha256": "f4b64bec25ad94d9ad57d173018189b41749a6aa124aa0df482ccddd6fa1f6c4",
+      "size": 693
+    },
+    {
+      "path": "snapshot/suite/customer-join/task.json",
+      "sha256": "80eddc1d675817d072fc5cf044f7c350b506192f730f23d73d365abb32a2bd25",
+      "size": 1062
+    },
+    {
+      "path": "snapshot/suite/customer-join/verifier.py",
+      "sha256": "7c37b7bc68a0a046db09823889d2472b78aba36d2a41477b68494c5029bebce5",
+      "size": 2094
+    },
+    {
+      "path": "snapshot/suite/decimal-invoices/fixture/TASK.md",
+      "sha256": "7bb1455edbb12f99836dd03b4409a8a5c62963439ced693120f9cab6237da743",
+      "size": 971
+    },
+    {
+      "path": "snapshot/suite/decimal-invoices/fixture/invoices.csv",
+      "sha256": "133d0e847d496088e301a483e1df6ab36a1fe568f344116858189c2955e705a6",
+      "size": 114
+    },
+    {
+      "path": "snapshot/suite/decimal-invoices/oracle/output.json",
+      "sha256": "f933def944f6ee1e3ca77d7bc7755d1f184fc9d92340327b786e5a345916c52e",
+      "size": 572
+    },
+    {
+      "path": "snapshot/suite/decimal-invoices/task.json",
+      "sha256": "cebd403138fe452525e2a61d0eed9b45cfd8ee4649204f85f0804d6e443a1a88",
+      "size": 1260
+    },
+    {
+      "path": "snapshot/suite/decimal-invoices/verifier.py",
+      "sha256": "7c37b7bc68a0a046db09823889d2472b78aba36d2a41477b68494c5029bebce5",
+      "size": 2094
+    },
+    {
+      "path": "snapshot/suite/grouped-sales/fixture/TASK.md",
+      "sha256": "b3a9fdc8eb85d2ddd06e9b9795990cf6ee38f854e20997d59d08ba8414fc1696",
+      "size": 790
+    },
+    {
+      "path": "snapshot/suite/grouped-sales/fixture/sales.csv",
+      "sha256": "1d1d7f954ab903576336560e7854486914208afd2b84810ac858e40c324e2374",
+      "size": 237
+    },
+    {
+      "path": "snapshot/suite/grouped-sales/oracle/output.json",
+      "sha256": "75c15a548d2965ed7a39597c070119e773d0b351ca900017758614c81b087b69",
+      "size": 250
+    },
+    {
+      "path": "snapshot/suite/grouped-sales/task.json",
+      "sha256": "2f84827196aff392361d21e8c2caf3cf85340081a77e8d31c25ba8a7936774df",
+      "size": 1065
+    },
+    {
+      "path": "snapshot/suite/grouped-sales/verifier.py",
+      "sha256": "7c37b7bc68a0a046db09823889d2472b78aba36d2a41477b68494c5029bebce5",
+      "size": 2094
+    },
+    {
+      "path": "snapshot/suite/missing-versus-zero/fixture/TASK.md",
+      "sha256": "4bb6b47ffefe6a8b2ce50793447da792afbfe3d35dfc39afe5f56ce087f68107",
+      "size": 832
+    },
+    {
+      "path": "snapshot/suite/missing-versus-zero/fixture/inventory.csv",
+      "sha256": "4b6743df43bb43c392ed7fafc1398712289e2e2e76fe31504c61466fcd732577",
+      "size": 67
+    },
+    {
+      "path": "snapshot/suite/missing-versus-zero/oracle/output.json",
+      "sha256": "973742be7a4847ad642d753b064022c7403f50836b434da7eb9d0df75f7ac543",
+      "size": 541
+    },
+    {
+      "path": "snapshot/suite/missing-versus-zero/task.json",
+      "sha256": "79095bcb5454eda7f0920582830239fd02599e788c665cc7843704832027c4f9",
+      "size": 1121
+    },
+    {
+      "path": "snapshot/suite/missing-versus-zero/verifier.py",
+      "sha256": "7c37b7bc68a0a046db09823889d2472b78aba36d2a41477b68494c5029bebce5",
+      "size": 2094
+    },
+    {
+      "path": "snapshot/suite/payment-reconciliation/fixture/TASK.md",
+      "sha256": "73da9af4b4c87004368b6e2d2cd301121152704ad7746b86bea83c3ed8a7e61c",
+      "size": 818
+    },
+    {
+      "path": "snapshot/suite/payment-reconciliation/fixture/invoices.csv",
+      "sha256": "2bb1b50482ac2aff2347b2f13a8a2c0c2d180ee3bf2c3f8a25a063e685e27ef1",
+      "size": 53
+    },
+    {
+      "path": "snapshot/suite/payment-reconciliation/fixture/payments.csv",
+      "sha256": "8d3ca396e7d17fc6f693ddca9ac9e3a2a0b71d95b7a641d061a81c5543afe1f6",
+      "size": 91
+    },
+    {
+      "path": "snapshot/suite/payment-reconciliation/oracle/output.json",
+      "sha256": "ae8d7e593d03c86ef9ae3b08a106103915ccb7fcc20e498e874dabf5c985d85b",
+      "size": 664
+    },
+    {
+      "path": "snapshot/suite/payment-reconciliation/task.json",
+      "sha256": "0937f5fd0632f82d95e22608c6d0b3a6e8840960fe7aa6e5f672471fff9a4ce5",
+      "size": 1104
+    },
+    {
+      "path": "snapshot/suite/payment-reconciliation/verifier.py",
+      "sha256": "7c37b7bc68a0a046db09823889d2472b78aba36d2a41477b68494c5029bebce5",
+      "size": 2094
+    },
+    {
+      "path": "snapshot/suite/schema-validation/fixture/TASK.md",
+      "sha256": "56964016f6eeb9f2ccb411ba10b4a59bbc94436332f558ee52470fc576fd0ed6",
+      "size": 1005
+    },
+    {
+      "path": "snapshot/suite/schema-validation/fixture/records.json",
+      "sha256": "e6145d3d949c112da1d9ed5c1c7c9e50facb250bc058d2b5bee56c1db8a8c99d",
+      "size": 754
+    },
+    {
+      "path": "snapshot/suite/schema-validation/oracle/output.json",
+      "sha256": "ff710ca08fe920b8eea074900c64070cef95a59ca885d514f283cfa322ad532a",
+      "size": 694
+    },
+    {
+      "path": "snapshot/suite/schema-validation/task.json",
+      "sha256": "a07237cd0a17f4d62edc6337b8de946a678a70b6e5756176c86ad679a716b819",
+      "size": 1286
+    },
+    {
+      "path": "snapshot/suite/schema-validation/verifier.py",
+      "sha256": "7c37b7bc68a0a046db09823889d2472b78aba36d2a41477b68494c5029bebce5",
+      "size": 2094
+    },
+    {
+      "path": "snapshot/suite/stable-ranking/fixture/TASK.md",
+      "sha256": "c8e9350dbf02aff1ec58634c404777472eca1f553f7f18f747dc33e26a01fc12",
+      "size": 613
+    },
+    {
+      "path": "snapshot/suite/stable-ranking/fixture/scores.csv",
+      "sha256": "614f58035c240ceaccd18dd96828db53b741c69ae1fa081a15d9c7a61a6ce0af",
+      "size": 69
+    },
+    {
+      "path": "snapshot/suite/stable-ranking/oracle/output.json",
+      "sha256": "00e7d2ae807d439b7bd00aed8c51a6459cd037c41543209417c22ca0322805a1",
+      "size": 376
+    },
+    {
+      "path": "snapshot/suite/stable-ranking/task.json",
+      "sha256": "ab61ba7cc89e89b24d823e22eea194e354badce7546e9f82e61582ab8072ddd2",
+      "size": 886
+    },
+    {
+      "path": "snapshot/suite/stable-ranking/verifier.py",
+      "sha256": "7c37b7bc68a0a046db09823889d2472b78aba36d2a41477b68494c5029bebce5",
+      "size": 2094
+    },
+    {
+      "path": "snapshot/suite/suite.json",
+      "sha256": "5badda2df77d0a3f02b2d4ee359f3c5a00df35cf0f0192e624741abc863e343c",
+      "size": 328
+    },
+    {
+      "path": "snapshot/suite/timezone-events/fixture/TASK.md",
+      "sha256": "12c134b784695d43f57957f54f074818a49bc425ed45a2e8170801bc49fe6977",
+      "size": 759
+    },
+    {
+      "path": "snapshot/suite/timezone-events/fixture/events.csv",
+      "sha256": "1c22425abb461d9c07ce572dc109a81601065f069229182941c1220da2abbc06",
+      "size": 166
+    },
+    {
+      "path": "snapshot/suite/timezone-events/oracle/output.json",
+      "sha256": "c5bf80036f734f5d76e74943f93dacfb58e2d60571fd70df07dbc508f8d3ac5c",
+      "size": 268
+    },
+    {
+      "path": "snapshot/suite/timezone-events/task.json",
+      "sha256": "9e772c6b8f80d0597cb862c30283a3ce954e6bb719668580770a29ed16e87d6e",
+      "size": 1029
+    },
+    {
+      "path": "snapshot/suite/timezone-events/verifier.py",
+      "sha256": "7c37b7bc68a0a046db09823889d2472b78aba36d2a41477b68494c5029bebce5",
+      "size": 2094
+    },
+    {
+      "path": "source-manifest.json",
+      "sha256": "a1ec1e49d117bb5d139fdc88251b2693a942efdd9b2ccd4f65376d4599deb6d9",
+      "size": 72407
+    }
+  ]
+}

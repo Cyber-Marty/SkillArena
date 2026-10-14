@@ -1,0 +1,35 @@
+{
+  "id": "stable-ranking-01-v1",
+  "task_id": "stable-ranking",
+  "condition": "v1",
+  "repetition": 1,
+  "status": "passed",
+  "success": true,
+  "runner": {
+    "returncode": 0,
+    "timed_out": false,
+    "duration_seconds": 29.482,
+    "completed": true,
+    "token_usage": {
+      "input_tokens": 43776,
+      "cached_input_tokens": 31488,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 447,
+      "reasoning_output_tokens": 90
+    },
+    "tool_calls": 7,
+    "started": true,
+    "protocol_valid": true,
+    "malformed_events": 0,
+    "skill_loaded": true,
+    "unexpected_tools": [],
+    "valid_agent_run": true
+  },
+  "evaluation": {
+    "returncode": 0,
+    "timed_out": false,
+    "duration_seconds": 0.292
+  },
+  "workspace_before_sha256": "acf8e4bfaaf844dee3993fb674a55666a5da090b559d3291969301fba49e134a",
+  "workspace_after_sha256": "5c36443857a337bffc780b6d7d16fb93ab0cd5f6fc99cb6027051ca6c18a8ac4"
+}

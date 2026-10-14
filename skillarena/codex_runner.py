@@ -150,7 +150,9 @@ def run_agent(executable: str, env: dict, workspace: Path, skill: Path | None,
     (evidence / "prompt.txt").write_text(prompt + "\n", encoding="utf-8")
     # The CLI cwd contains no task/evaluator/skill files. All task I/O is mediated by MCP.
     with tempfile.TemporaryDirectory(prefix="skillarena-context-") as context:
-        server_args = [str(Path(__file__).with_name("workspace_mcp.py")), "--root", str(workspace),
+        frozen_server = evidence.parent.parent / "snapshot" / "implementation" / "workspace_mcp.py"
+        server_path = frozen_server if frozen_server.is_file() else Path(__file__).with_name("workspace_mcp.py")
+        server_args = [str(server_path), "--root", str(workspace),
                        "--audit", str(evidence / "tools.jsonl"), "--max-tool-calls", str(max_tools)]
         if skill:
             server_args.extend(["--skill-root", str(skill)])
@@ -212,10 +214,14 @@ def run_agent(executable: str, env: dict, workspace: Path, skill: Path | None,
     audit = [json.loads(line) for line in audit_path.read_text(encoding="utf-8").splitlines()] if audit_path.exists() else []
     completed = any(event.get("type") == "turn.completed" for event in events)
     protocol_valid = not malformed_events and not any(event.get("type") == "turn.failed" for event in events)
+    tool_delivery_failure = any(event.get("type") == "item.completed"
+                                and event.get("item", {}).get("type") == "mcp_tool_call"
+                                and event["item"].get("error") is not None for event in events)
     return {key: process[key] for key in ("returncode", "timed_out", "duration_seconds")} | {
         "completed": completed, "token_usage": usage, "tool_calls": len(audit),
         "started": any(event.get("type") == "turn.started" for event in events),
         "protocol_valid": protocol_valid, "malformed_events": malformed_events,
+        "tool_delivery_failure": tool_delivery_failure,
         "skill_loaded": any(item.get("name") == "read_skill" and item.get("status") == "ok" for item in audit),
         "unexpected_tools": unexpected,
         "valid_agent_run": process["returncode"] == 0 and completed and bool(audit) and not unexpected and protocol_valid,

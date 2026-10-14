@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SkillArena · {{ data.benchmark|replace('_', ' ')|title }}</title>
+  <style>
+    :root{color-scheme:light;--ink:#10201c;--muted:#60716b;--line:#dce7df;--green:#157f59;--bg:#f4f7f2}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}
+    main{max-width:980px;margin:0 auto;padding:44px 20px 80px}header{border-bottom:1px solid var(--line);padding-bottom:28px}
+    .brand{font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--green);font-weight:800}
+    h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.1;margin:14px 0}h2{font-size:1.2rem;margin:32px 0 14px}
+    p{color:var(--muted);margin:8px 0}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:28px}
+    .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;box-shadow:0 8px 24px #153b1d08}
+    .label{color:var(--muted);font-size:.85rem;text-transform:uppercase;letter-spacing:.08em}.value{font-size:3rem;font-weight:800;line-height:1.2;margin:10px 0}
+    .bar{height:12px;background:#e7eee9;border-radius:10px;overflow:hidden}.fill{height:100%;background:var(--green)}
+    .meta{display:flex;gap:20px;flex-wrap:wrap;margin-top:18px;font-size:.9rem;color:var(--muted)}
+    table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+    th,td{text-align:left;padding:12px 15px;border-bottom:1px solid var(--line)}th{font-size:.85rem;color:var(--muted)}tr:last-child td{border:0}
+    .pass{color:var(--green);font-weight:700}.fail{color:#a7332c;font-weight:700}code{font-size:.85em;overflow-wrap:anywhere}
+    .note{border-left:4px solid var(--green);padding:2px 16px;background:#eaf3e9;margin-top:30px}
+    @media(max-width:650px){.grid{grid-template-columns:1fr}table{font-size:.85rem}th,td{padding:8px}}
+  </style>
+</head>
+<body><main>
+  <header>
+    <div class="brand">SkillArena / Benchmark report</div>
+    <h1>{{ data.benchmark|replace('_', ' ')|title }}</h1>
+    <p>{{ data.description }}</p>
+    <div class="meta"><span>{{ data.repetitions }} paired repetitions</span><span>{{ data.created_at }}</span><span>Definition SHA-256: <code>{{ data.benchmark_sha256[:12] }}</code></span></div>
+    {% if data.metadata %}<div class="meta">{% for key, value in data.metadata.items() %}<span>{{ key|replace('_', ' ')|title }}: {{ value }}</span>{% endfor %}</div>{% endif %}
+  </header>
+  <section class="grid" aria-label="Success rates">
+    {% for arm, label in [('baseline', 'Without skill'), ('skill', 'With skill')] %}
+    <div class="card"><div class="label">{{ label }}</div><div class="value">{{ (data.summary[arm].success_rate * 100)|round|int }}%</div>
+      <div class="bar"><div class="fill" style="width:{{ (data.summary[arm].success_rate * 100)|round|int }}%"></div></div>
+      <p>{{ data.summary[arm].successes }} of {{ data.summary[arm].runs }} successful runs · {{ data.summary[arm].mean_runner_seconds }} s average runner time</p>
+      {% if data.summary[arm].mean_input_tokens is not none %}<p>{{ data.summary[arm].mean_input_tokens }} input / {{ data.summary[arm].mean_output_tokens }} output tokens on average</p>{% endif %}
+    </div>
+    {% endfor %}
+  </section>
+  <h2>Individual runs</h2>
+  <table><thead><tr><th>Run</th><th>Condition</th><th>Result</th><th>Runner</th><th>Evaluation</th><th>Files changed</th></tr></thead><tbody>
+  {% for run in data.runs %}<tr><td>{{ run.id }}</td><td>{{ 'With skill' if run.arm == 'skill' else 'Without skill' }}</td>
+    <td class="{{ 'pass' if run.success else 'fail' }}">{{ 'Pass' if run.success else 'Fail' }}</td>
+    <td>{{ run.runner.duration_seconds }} s</td><td>{{ run.evaluation.duration_seconds }} s</td><td>{{ run.changes.files_changed|length }}</td></tr>{% endfor %}
+  </tbody></table>
+  <div class="note"><strong>How to read this</strong>
+    {% for limitation in data.limitations %}<p>{{ limitation }}</p>{% endfor %}
+    <p>Inspect <code>metrics.json</code> and the accompanying evidence files to audit each run.</p>
+  </div>
+</main></body></html>

@@ -1,0 +1,35 @@
+{
+  "id": "contact-dedupe-01-v2",
+  "task_id": "contact-dedupe",
+  "condition": "v2",
+  "repetition": 1,
+  "status": "passed",
+  "success": true,
+  "runner": {
+    "returncode": 0,
+    "timed_out": false,
+    "duration_seconds": 61.826,
+    "completed": true,
+    "token_usage": {
+      "input_tokens": 45085,
+      "cached_input_tokens": 39680,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 520,
+      "reasoning_output_tokens": 107
+    },
+    "tool_calls": 8,
+    "started": true,
+    "protocol_valid": true,
+    "malformed_events": 0,
+    "skill_loaded": true,
+    "unexpected_tools": [],
+    "valid_agent_run": true
+  },
+  "evaluation": {
+    "returncode": 0,
+    "timed_out": false,
+    "duration_seconds": 0.616
+  },
+  "workspace_before_sha256": "fc4aa19fe704807c259d59cf3455300136a627abe7757cfed6842e5ce8ef5f5a",
+  "workspace_after_sha256": "aa15f526987dd9f1cccd2a76ca54574daaa52e471b89d4570f1ea63f3e8c0583"
+}

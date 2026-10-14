@@ -40,6 +40,9 @@ def test_file_tools_and_json_check(tmp_path: Path) -> None:
     assert invalid is False
     assert report["valid_json"] is False
     assert len(audit.read_text(encoding="utf-8").splitlines()) == 6
+    for nonfinite in ("NaN", "Infinity", "-Infinity"):
+        call(server, "write_file", {"path": "output.json", "content": nonfinite})
+        assert call(server, "check_output", {})[1]["valid_json"] is False
 
 
 def test_rejects_escape_and_fixture_writes_with_safe_audit(tmp_path: Path) -> None:

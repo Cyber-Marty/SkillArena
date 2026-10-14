@@ -1,0 +1,1 @@
+{"valid_ids":["u1","u7","u9"],"errors":[{"row":2,"issues":["id_empty"]},{"row":3,"issues":["age_range"]},{"row":4,"issues":["age_type"]},{"row":5,"issues":["active_type"]},{"row":6,"issues":["active_type"]},{"row":8,"issues":["age_range"]},{"row":10,"issues":["id_type","age_type","active_type"]}]}

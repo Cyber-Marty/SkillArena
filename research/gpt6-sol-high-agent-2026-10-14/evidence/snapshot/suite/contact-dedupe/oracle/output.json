@@ -1,0 +1,22 @@
+{
+  "contacts": [
+    {
+      "id": "A02",
+      "name": "Ana M",
+      "email": "ana@example.com",
+      "updated_at": "2025-01-05"
+    },
+    {
+      "id": "B01",
+      "name": "Ben",
+      "email": "ben@example.com",
+      "updated_at": "2025-01-03"
+    },
+    {
+      "id": "C01",
+      "name": "Cara",
+      "email": "cara@example.com",
+      "updated_at": "2024-12-31"
+    }
+  ]
+}

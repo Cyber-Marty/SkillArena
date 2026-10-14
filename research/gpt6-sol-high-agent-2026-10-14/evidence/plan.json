@@ -1,0 +1,201 @@
+{
+  "schema_version": 2,
+  "benchmark": "data-skill-suite",
+  "seed": 42,
+  "ordering": "seeded shuffled conditions, cyclic balanced block order",
+  "tasks": 10,
+  "conditions": [
+    "v1",
+    "baseline",
+    "v2"
+  ],
+  "planned_agent_runs": 30,
+  "max_agent_runs": 30,
+  "max_tool_calls_per_run": 40,
+  "timeout_seconds_per_run": 180,
+  "model": "gpt-6-sol",
+  "reasoning_effort": "high",
+  "billing_policy": "existing ChatGPT login; no API keys, no credit top-ups, stop on low/unknown included quota",
+  "schedule": [
+    {
+      "id": "decimal-invoices-01-v1",
+      "task_id": "decimal-invoices",
+      "condition": "v1",
+      "repetition": 1
+    },
+    {
+      "id": "decimal-invoices-01-baseline",
+      "task_id": "decimal-invoices",
+      "condition": "baseline",
+      "repetition": 1
+    },
+    {
+      "id": "decimal-invoices-01-v2",
+      "task_id": "decimal-invoices",
+      "condition": "v2",
+      "repetition": 1
+    },
+    {
+      "id": "missing-versus-zero-01-baseline",
+      "task_id": "missing-versus-zero",
+      "condition": "baseline",
+      "repetition": 1
+    },
+    {
+      "id": "missing-versus-zero-01-v2",
+      "task_id": "missing-versus-zero",
+      "condition": "v2",
+      "repetition": 1
+    },
+    {
+      "id": "missing-versus-zero-01-v1",
+      "task_id": "missing-versus-zero",
+      "condition": "v1",
+      "repetition": 1
+    },
+    {
+      "id": "csv-cleanup-01-v2",
+      "task_id": "csv-cleanup",
+      "condition": "v2",
+      "repetition": 1
+    },
+    {
+      "id": "csv-cleanup-01-v1",
+      "task_id": "csv-cleanup",
+      "condition": "v1",
+      "repetition": 1
+    },
+    {
+      "id": "csv-cleanup-01-baseline",
+      "task_id": "csv-cleanup",
+      "condition": "baseline",
+      "repetition": 1
+    },
+    {
+      "id": "contact-dedupe-01-v1",
+      "task_id": "contact-dedupe",
+      "condition": "v1",
+      "repetition": 1
+    },
+    {
+      "id": "contact-dedupe-01-baseline",
+      "task_id": "contact-dedupe",
+      "condition": "baseline",
+      "repetition": 1
+    },
+    {
+      "id": "contact-dedupe-01-v2",
+      "task_id": "contact-dedupe",
+      "condition": "v2",
+      "repetition": 1
+    },
+    {
+      "id": "grouped-sales-01-baseline",
+      "task_id": "grouped-sales",
+      "condition": "baseline",
+      "repetition": 1
+    },
+    {
+      "id": "grouped-sales-01-v2",
+      "task_id": "grouped-sales",
+      "condition": "v2",
+      "repetition": 1
+    },
+    {
+      "id": "grouped-sales-01-v1",
+      "task_id": "grouped-sales",
+      "condition": "v1",
+      "repetition": 1
+    },
+    {
+      "id": "timezone-events-01-v2",
+      "task_id": "timezone-events",
+      "condition": "v2",
+      "repetition": 1
+    },
+    {
+      "id": "timezone-events-01-v1",
+      "task_id": "timezone-events",
+      "condition": "v1",
+      "repetition": 1
+    },
+    {
+      "id": "timezone-events-01-baseline",
+      "task_id": "timezone-events",
+      "condition": "baseline",
+      "repetition": 1
+    },
+    {
+      "id": "customer-join-01-v1",
+      "task_id": "customer-join",
+      "condition": "v1",
+      "repetition": 1
+    },
+    {
+      "id": "customer-join-01-baseline",
+      "task_id": "customer-join",
+      "condition": "baseline",
+      "repetition": 1
+    },
+    {
+      "id": "customer-join-01-v2",
+      "task_id": "customer-join",
+      "condition": "v2",
+      "repetition": 1
+    },
+    {
+      "id": "stable-ranking-01-baseline",
+      "task_id": "stable-ranking",
+      "condition": "baseline",
+      "repetition": 1
+    },
+    {
+      "id": "stable-ranking-01-v2",
+      "task_id": "stable-ranking",
+      "condition": "v2",
+      "repetition": 1
+    },
+    {
+      "id": "stable-ranking-01-v1",
+      "task_id": "stable-ranking",
+      "condition": "v1",
+      "repetition": 1
+    },
+    {
+      "id": "payment-reconciliation-01-v2",
+      "task_id": "payment-reconciliation",
+      "condition": "v2",
+      "repetition": 1
+    },
+    {
+      "id": "payment-reconciliation-01-v1",
+      "task_id": "payment-reconciliation",
+      "condition": "v1",
+      "repetition": 1
+    },
+    {
+      "id": "payment-reconciliation-01-baseline",
+      "task_id": "payment-reconciliation",
+      "condition": "baseline",
+      "repetition": 1
+    },
+    {
+      "id": "schema-validation-01-v1",
+      "task_id": "schema-validation",
+      "condition": "v1",
+      "repetition": 1
+    },
+    {
+      "id": "schema-validation-01-baseline",
+      "task_id": "schema-validation",
+      "condition": "baseline",
+      "repetition": 1
+    },
+    {
+      "id": "schema-validation-01-v2",
+      "task_id": "schema-validation",
+      "condition": "v2",
+      "repetition": 1
+    }
+  ]
+}

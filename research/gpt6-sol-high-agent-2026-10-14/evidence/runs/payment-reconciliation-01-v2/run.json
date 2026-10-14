@@ -1,0 +1,35 @@
+{
+  "id": "payment-reconciliation-01-v2",
+  "task_id": "payment-reconciliation",
+  "condition": "v2",
+  "repetition": 1,
+  "status": "passed",
+  "success": true,
+  "runner": {
+    "returncode": 0,
+    "timed_out": false,
+    "duration_seconds": 32.532,
+    "completed": true,
+    "token_usage": {
+      "input_tokens": 45328,
+      "cached_input_tokens": 36992,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 547,
+      "reasoning_output_tokens": 79
+    },
+    "tool_calls": 9,
+    "started": true,
+    "protocol_valid": true,
+    "malformed_events": 0,
+    "skill_loaded": true,
+    "unexpected_tools": [],
+    "valid_agent_run": true
+  },
+  "evaluation": {
+    "returncode": 0,
+    "timed_out": false,
+    "duration_seconds": 0.422
+  },
+  "workspace_before_sha256": "f27a4797ad8d45ef04e714bba8fb70775964376525dc1dd97c7ab613bb2adeb2",
+  "workspace_after_sha256": "d1656efcecf02e60d27ed88589b6de3316d07a095ee851b7d22c3b145005825a"
+}

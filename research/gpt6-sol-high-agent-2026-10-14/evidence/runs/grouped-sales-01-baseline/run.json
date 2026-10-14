@@ -1,0 +1,35 @@
+{
+  "id": "grouped-sales-01-baseline",
+  "task_id": "grouped-sales",
+  "condition": "baseline",
+  "repetition": 1,
+  "status": "passed",
+  "success": true,
+  "runner": {
+    "returncode": 0,
+    "timed_out": false,
+    "duration_seconds": 29.501,
+    "completed": true,
+    "token_usage": {
+      "input_tokens": 41964,
+      "cached_input_tokens": 30336,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 443,
+      "reasoning_output_tokens": 125
+    },
+    "tool_calls": 6,
+    "started": true,
+    "protocol_valid": true,
+    "malformed_events": 0,
+    "skill_loaded": false,
+    "unexpected_tools": [],
+    "valid_agent_run": true
+  },
+  "evaluation": {
+    "returncode": 0,
+    "timed_out": false,
+    "duration_seconds": 0.758
+  },
+  "workspace_before_sha256": "f36b66b688a913b2346eae1c6d0ea231886f00d3063f3ca1f5bb28a5b27fa6bc",
+  "workspace_after_sha256": "90c21c2f3d8c1b5da9ff135e0333f14bb1d5d797a7933ae237eeaa29c7e3c19f"
+}

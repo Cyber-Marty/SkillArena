@@ -1,0 +1,35 @@
+{
+  "id": "csv-cleanup-01-baseline",
+  "task_id": "csv-cleanup",
+  "condition": "baseline",
+  "repetition": 1,
+  "status": "passed",
+  "success": true,
+  "runner": {
+    "returncode": 0,
+    "timed_out": false,
+    "duration_seconds": 65.916,
+    "completed": true,
+    "token_usage": {
+      "input_tokens": 43755,
+      "cached_input_tokens": 27008,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 454,
+      "reasoning_output_tokens": 115
+    },
+    "tool_calls": 6,
+    "started": true,
+    "protocol_valid": true,
+    "malformed_events": 0,
+    "skill_loaded": false,
+    "unexpected_tools": [],
+    "valid_agent_run": true
+  },
+  "evaluation": {
+    "returncode": 0,
+    "timed_out": false,
+    "duration_seconds": 0.613
+  },
+  "workspace_before_sha256": "d07d50eab2ac36fb411edb609a68f9fca47ca3b190315e35bc179da2238ebbaa",
+  "workspace_after_sha256": "c5fbecd831e64cce088cff88278553d249d2da63b73f1d6b79b44fe9b9cde8c5"
+}

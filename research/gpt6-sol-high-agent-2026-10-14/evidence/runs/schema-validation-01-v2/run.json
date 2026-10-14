@@ -1,0 +1,35 @@
+{
+  "id": "schema-validation-01-v2",
+  "task_id": "schema-validation",
+  "condition": "v2",
+  "repetition": 1,
+  "status": "passed",
+  "success": true,
+  "runner": {
+    "returncode": 0,
+    "timed_out": false,
+    "duration_seconds": 59.459,
+    "completed": true,
+    "token_usage": {
+      "input_tokens": 46618,
+      "cached_input_tokens": 36480,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 568,
+      "reasoning_output_tokens": 154
+    },
+    "tool_calls": 8,
+    "started": true,
+    "protocol_valid": true,
+    "malformed_events": 0,
+    "skill_loaded": true,
+    "unexpected_tools": [],
+    "valid_agent_run": true
+  },
+  "evaluation": {
+    "returncode": 0,
+    "timed_out": false,
+    "duration_seconds": 0.269
+  },
+  "workspace_before_sha256": "d056a256c4bb959fcb040f1c52248ac19593b0f8ae0a8fae077ac93732ccef8e",
+  "workspace_after_sha256": "be5b23deb386364716af5610a5443676003042946ddb005eef0ddb488e07aa78"
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": 2,
+  "id": "data-workflows-v1",
+  "version": "1.0.0",
+  "tasks": [
+    "decimal-invoices",
+    "missing-versus-zero",
+    "csv-cleanup",
+    "contact-dedupe",
+    "grouped-sales",
+    "timezone-events",
+    "customer-join",
+    "stable-ranking",
+    "payment-reconciliation",
+    "schema-validation"
+  ]
+}

@@ -8,7 +8,19 @@ SkillArena is a local benchmark harness. Version 0.2 runs a real Codex agent thr
 
 ## Current evidence
 
-**Formal v0.2 experiment pending.** The checked-in [full experiment definition](examples/agent_suite.yaml) schedules 10 tasks × 3 conditions × 1 repetition = 30 agent runs. No 30-run result is claimed here. An earlier, separate [model-only Python bug-fix pilot](research/gpt6-sol-high-2026-10-14/README.md) found 3/3 passes with and without a skill; it used a different task and protocol and must not be treated as a data-suite result.
+**30 real GPT-6 Sol High agent runs are published:** 10 original synthetic tasks × 3 conditions × 1 repetition.
+
+| Condition | Passed |
+| --- | ---: |
+| baseline | 10/10 |
+| v1 | 10/10 |
+| v2 | 10/10 |
+
+Observed v1 → v2 change: **+0.0 percentage points**. These tasks do not establish general skill effectiveness or equivalence. [Read the evidence and limitations](research/gpt6-sol-high-agent-2026-10-14/README.md) · [Open the live report](https://Cyber-Marty.github.io/SkillArena/).
+
+![Audited agent evaluation report](docs/images/agent-report.png)
+
+The earlier [model-only Python pilot](research/gpt6-sol-high-2026-10-14/README.md) uses a different protocol and is retained separately.
 
 The [deterministic demo](examples/demo.yaml) is useful for checking the legacy command-runner workflow. Its 0% → 100% change comes from scripted agents, not model inference.
 

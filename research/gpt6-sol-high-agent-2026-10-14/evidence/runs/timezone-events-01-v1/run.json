@@ -1,0 +1,35 @@
+{
+  "id": "timezone-events-01-v1",
+  "task_id": "timezone-events",
+  "condition": "v1",
+  "repetition": 1,
+  "status": "passed",
+  "success": true,
+  "runner": {
+    "returncode": 0,
+    "timed_out": false,
+    "duration_seconds": 27.325,
+    "completed": true,
+    "token_usage": {
+      "input_tokens": 35850,
+      "cached_input_tokens": 27776,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 406,
+      "reasoning_output_tokens": 84
+    },
+    "tool_calls": 7,
+    "started": true,
+    "protocol_valid": true,
+    "malformed_events": 0,
+    "skill_loaded": true,
+    "unexpected_tools": [],
+    "valid_agent_run": true
+  },
+  "evaluation": {
+    "returncode": 0,
+    "timed_out": false,
+    "duration_seconds": 0.497
+  },
+  "workspace_before_sha256": "60f3302eb5fb3b072a743cdb4f9084bfb80704f7e61a29aa7f3406454260911f",
+  "workspace_after_sha256": "768296c60a16e799fa6ef06c022af4f0e6d1ab7f205d05773d2830485b9db584"
+}

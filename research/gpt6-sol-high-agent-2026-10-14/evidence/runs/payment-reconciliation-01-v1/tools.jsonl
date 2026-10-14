@@ -1,0 +1,8 @@
+{"sequence":1,"name":"list_files","arguments":{},"result":{"isError":false,"type":"list_files"},"status":"ok","elapsed_ms":1.774}
+{"sequence":2,"name":"list_skills","arguments":{},"result":{"isError":false,"type":"list_skills"},"status":"ok","elapsed_ms":1.368}
+{"sequence":3,"name":"read_skill","arguments":{"path":"SKILL.md"},"result":{"isError":false,"type":"read_skill"},"status":"ok","elapsed_ms":3.044}
+{"sequence":4,"name":"read_file","arguments":{"path":"TASK.md"},"result":{"isError":false,"type":"read_file"},"status":"ok","elapsed_ms":1.484}
+{"sequence":5,"name":"read_file","arguments":{"path":"invoices.csv"},"result":{"isError":false,"type":"read_file"},"status":"ok","elapsed_ms":1.512}
+{"sequence":6,"name":"read_file","arguments":{"path":"payments.csv"},"result":{"isError":false,"type":"read_file"},"status":"ok","elapsed_ms":1.516}
+{"sequence":7,"name":"write_file","arguments":{"path":"output.json","content_bytes":629},"result":{"isError":false,"type":"write_file"},"status":"ok","elapsed_ms":4.483}
+{"sequence":8,"name":"check_output","arguments":{"path":"output.json"},"result":{"isError":false,"type":"check_output","valid_json":true},"status":"ok","elapsed_ms":7.893}

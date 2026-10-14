@@ -269,6 +269,10 @@ def run_experiment(experiment: Experiment, output: Path, progress=print) -> dict
                 entry["workspace_after_sha256"] = tree_digest(workspace)
                 if runner["timed_out"] and runner.get("started") and runner.get("tool_calls", 0) > 0:
                     status = "failed"  # The declared time budget is part of task performance.
+                elif (runner.get("completed") and runner.get("returncode") == 0
+                      and runner.get("protocol_valid") and not runner.get("tool_delivery_failure")
+                      and not runner.get("unexpected_tools") and runner.get("tool_calls") == 0):
+                    status = "failed"  # An agent that chooses not to act has failed the task.
                 elif not runner["valid_agent_run"] or evaluation["returncode"] not in (0, 1):
                     status = "infrastructure_error"
                 else:
