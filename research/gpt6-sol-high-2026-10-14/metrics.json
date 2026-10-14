@@ -1,0 +1,230 @@
+{
+  "schema_version": 1,
+  "benchmark": "python_bug_fix_gpt6_sol_high",
+  "description": "Real GPT-6 Sol High model-only runs on a small synthetic Python bug-fix task.",
+  "benchmark_sha256": "c5b71333414142a66b3fd3a265a4e17f8f12422f7e0dd0869cd4f9fcfd158dfa",
+  "task_sha256": "f1a68a38ffd70d31f6a0546647498db571f7ee065ccf74b646cdacf15ee3ff68",
+  "skill_sha256": "278d6ebeae0177e2f82d224e786a3bc202a9b3b475075bf240a62786be701f90",
+  "created_at": "2026-10-14T08:15:20.892017+00:00",
+  "repetitions": 3,
+  "runner_type": "command",
+  "metadata": {
+    "model": "gpt-6-sol",
+    "reasoning_effort": "high",
+    "authentication": "ChatGPT subscription",
+    "task_origin": "synthetic code fixture",
+    "interaction": "full-file replacement, no model tools"
+  },
+  "runs": [
+    {
+      "id": "01-baseline",
+      "arm": "baseline",
+      "repetition": 1,
+      "success": true,
+      "runner": {
+        "returncode": 0,
+        "timed_out": false,
+        "duration_seconds": 53.287
+      },
+      "evaluation": {
+        "returncode": 0,
+        "timed_out": false,
+        "duration_seconds": 0.32
+      },
+      "changes": {
+        "files_changed": [
+          "calculate.py"
+        ],
+        "lines_added": 1,
+        "lines_deleted": 1
+      },
+      "token_usage": {
+        "input_tokens": 14376,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 103,
+        "reasoning_output_tokens": 21
+      },
+      "tool_calls": null
+    },
+    {
+      "id": "01-skill",
+      "arm": "skill",
+      "repetition": 1,
+      "success": true,
+      "runner": {
+        "returncode": 0,
+        "timed_out": false,
+        "duration_seconds": 34.473
+      },
+      "evaluation": {
+        "returncode": 0,
+        "timed_out": false,
+        "duration_seconds": 0.343
+      },
+      "changes": {
+        "files_changed": [
+          "calculate.py"
+        ],
+        "lines_added": 1,
+        "lines_deleted": 1
+      },
+      "token_usage": {
+        "input_tokens": 14548,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 110,
+        "reasoning_output_tokens": 28
+      },
+      "tool_calls": null
+    },
+    {
+      "id": "02-skill",
+      "arm": "skill",
+      "repetition": 2,
+      "success": true,
+      "runner": {
+        "returncode": 0,
+        "timed_out": false,
+        "duration_seconds": 89.698
+      },
+      "evaluation": {
+        "returncode": 0,
+        "timed_out": false,
+        "duration_seconds": 0.281
+      },
+      "changes": {
+        "files_changed": [
+          "calculate.py"
+        ],
+        "lines_added": 1,
+        "lines_deleted": 1
+      },
+      "token_usage": {
+        "input_tokens": 14426,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 114,
+        "reasoning_output_tokens": 32
+      },
+      "tool_calls": null
+    },
+    {
+      "id": "02-baseline",
+      "arm": "baseline",
+      "repetition": 2,
+      "success": true,
+      "runner": {
+        "returncode": 0,
+        "timed_out": false,
+        "duration_seconds": 27.966
+      },
+      "evaluation": {
+        "returncode": 0,
+        "timed_out": false,
+        "duration_seconds": 0.254
+      },
+      "changes": {
+        "files_changed": [
+          "calculate.py"
+        ],
+        "lines_added": 1,
+        "lines_deleted": 1
+      },
+      "token_usage": {
+        "input_tokens": 14498,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 103,
+        "reasoning_output_tokens": 21
+      },
+      "tool_calls": null
+    },
+    {
+      "id": "03-baseline",
+      "arm": "baseline",
+      "repetition": 3,
+      "success": true,
+      "runner": {
+        "returncode": 0,
+        "timed_out": false,
+        "duration_seconds": 23.418
+      },
+      "evaluation": {
+        "returncode": 0,
+        "timed_out": false,
+        "duration_seconds": 0.286
+      },
+      "changes": {
+        "files_changed": [
+          "calculate.py"
+        ],
+        "lines_added": 1,
+        "lines_deleted": 1
+      },
+      "token_usage": {
+        "input_tokens": 14498,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 106,
+        "reasoning_output_tokens": 24
+      },
+      "tool_calls": null
+    },
+    {
+      "id": "03-skill",
+      "arm": "skill",
+      "repetition": 3,
+      "success": true,
+      "runner": {
+        "returncode": 0,
+        "timed_out": false,
+        "duration_seconds": 15.971
+      },
+      "evaluation": {
+        "returncode": 0,
+        "timed_out": false,
+        "duration_seconds": 0.459
+      },
+      "changes": {
+        "files_changed": [
+          "calculate.py"
+        ],
+        "lines_added": 1,
+        "lines_deleted": 1
+      },
+      "token_usage": {
+        "input_tokens": 14548,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 112,
+        "reasoning_output_tokens": 30
+      },
+      "tool_calls": null
+    }
+  ],
+  "summary": {
+    "baseline": {
+      "runs": 3,
+      "successes": 3,
+      "success_rate": 1.0,
+      "mean_runner_seconds": 34.89,
+      "mean_input_tokens": 14457,
+      "mean_output_tokens": 104
+    },
+    "skill": {
+      "runs": 3,
+      "successes": 3,
+      "success_rate": 1.0,
+      "mean_runner_seconds": 46.714,
+      "mean_input_tokens": 14507,
+      "mean_output_tokens": 112
+    },
+    "absolute_success_rate_change": 0.0
+  },
+  "limitations": [
+    "Success means the runner and evaluator both exited with code 0.",
+    "Token counts appear only if the runner reports Codex turn.completed usage; tool counts are unavailable.",
+    "This benchmark does not establish statistical confidence or causality."
+  ]
+}

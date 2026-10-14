@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SkillArena · Python Bug Fix Gpt6 Sol High</title>
+  <style>
+    :root{color-scheme:light;--ink:#10201c;--muted:#60716b;--line:#dce7df;--green:#157f59;--bg:#f4f7f2}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}
+    main{max-width:980px;margin:0 auto;padding:44px 20px 80px}header{border-bottom:1px solid var(--line);padding-bottom:28px}
+    .brand{font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--green);font-weight:800}
+    h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.1;margin:14px 0}h2{font-size:1.2rem;margin:32px 0 14px}
+    p{color:var(--muted);margin:8px 0}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:28px}
+    .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;box-shadow:0 8px 24px #153b1d08}
+    .label{color:var(--muted);font-size:.85rem;text-transform:uppercase;letter-spacing:.08em}.value{font-size:3rem;font-weight:800;line-height:1.2;margin:10px 0}
+    .bar{height:12px;background:#e7eee9;border-radius:10px;overflow:hidden}.fill{height:100%;background:var(--green)}
+    .meta{display:flex;gap:20px;flex-wrap:wrap;margin-top:18px;font-size:.9rem;color:var(--muted)}
+    table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+    th,td{text-align:left;padding:12px 15px;border-bottom:1px solid var(--line)}th{font-size:.85rem;color:var(--muted)}tr:last-child td{border:0}
+    .pass{color:var(--green);font-weight:700}.fail{color:#a7332c;font-weight:700}code{font-size:.85em;overflow-wrap:anywhere}
+    .note{border-left:4px solid var(--green);padding:2px 16px;background:#eaf3e9;margin-top:30px}
+    @media(max-width:650px){.grid{grid-template-columns:1fr}table{font-size:.85rem}th,td{padding:8px}}
+  </style>
+</head>
+<body><main>
+  <header>
+    <div class="brand">SkillArena / Benchmark report</div>
+    <h1>Python Bug Fix Gpt6 Sol High</h1>
+    <p>Real GPT-6 Sol High model-only runs on a small synthetic Python bug-fix task.</p>
+    <div class="meta"><span>3 paired repetitions</span><span>2026-10-14T08:15:20.892017+00:00</span><span>Definition SHA-256: <code>c5b713334141</code></span></div>
+<div class="meta"><span>Model: gpt-6-sol</span><span>Reasoning Effort: high</span><span>Authentication: ChatGPT subscription</span><span>Task Origin: synthetic code fixture</span><span>Interaction: full-file replacement, no model tools</span></div>  </header>
+  <section class="grid" aria-label="Success rates">
+    <div class="card"><div class="label">Without skill</div><div class="value">100%</div>
+      <div class="bar"><div class="fill" style="width:100%"></div></div>
+      <p>3 of 3 successful runs · 34.89 s average runner time</p>
+<p>14457 input / 104 output tokens on average</p>    </div>
+    <div class="card"><div class="label">With skill</div><div class="value">100%</div>
+      <div class="bar"><div class="fill" style="width:100%"></div></div>
+      <p>3 of 3 successful runs · 46.714 s average runner time</p>
+<p>14507 input / 112 output tokens on average</p>    </div>
+  </section>
+  <h2>Individual runs</h2>
+  <table><thead><tr><th>Run</th><th>Condition</th><th>Result</th><th>Runner</th><th>Evaluation</th><th>Files changed</th></tr></thead><tbody>
+<tr><td>01-baseline</td><td>Without skill</td>
+    <td class="pass">Pass</td>
+    <td>53.287 s</td><td>0.32 s</td><td>1</td></tr><tr><td>01-skill</td><td>With skill</td>
+    <td class="pass">Pass</td>
+    <td>34.473 s</td><td>0.343 s</td><td>1</td></tr><tr><td>02-skill</td><td>With skill</td>
+    <td class="pass">Pass</td>
+    <td>89.698 s</td><td>0.281 s</td><td>1</td></tr><tr><td>02-baseline</td><td>Without skill</td>
+    <td class="pass">Pass</td>
+    <td>27.966 s</td><td>0.254 s</td><td>1</td></tr><tr><td>03-baseline</td><td>Without skill</td>
+    <td class="pass">Pass</td>
+    <td>23.418 s</td><td>0.286 s</td><td>1</td></tr><tr><td>03-skill</td><td>With skill</td>
+    <td class="pass">Pass</td>
+    <td>15.971 s</td><td>0.459 s</td><td>1</td></tr>  </tbody></table>
+  <div class="note"><strong>How to read this</strong>
+<p>Success means the runner and evaluator both exited with code 0.</p><p>Token counts appear only if the runner reports Codex turn.completed usage; tool counts are unavailable.</p><p>This benchmark does not establish statistical confidence or causality.</p>    <p>Inspect <code>metrics.json</code> and the accompanying evidence files to audit each run.</p>
+  </div>
+</main></body></html>

@@ -1,0 +1,13 @@
+name: python_bug_fix_demo
+description: A synthetic fixture demonstrating the benchmark workflow; its results are not evidence about a real model.
+task:
+  source: fixture
+  prompt: Fix the off-by-one bug in calculate.py so the external tests pass.
+skill: skill.md
+runner:
+  type: command
+  command: [python, "{benchmark_dir}/demo_agent.py"]
+evaluation:
+  command: [python, "{benchmark_dir}/evaluate.py"]
+repetitions: 3
+timeout_seconds: 30

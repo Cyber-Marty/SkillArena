@@ -1,0 +1,19 @@
+name: python_bug_fix_gpt6_sol_high
+description: Real GPT-6 Sol High model-only runs on a small synthetic Python bug-fix task.
+task:
+  source: python_bug_fix/fixture
+  prompt: Fix the off-by-one bug in calculate.py so the function honors its inclusive end_index contract.
+skill: python_bug_fix/skill.md
+runner:
+  type: command
+  command: [python, "{benchmark_dir}/python_bug_fix/codex_agent.py"]
+evaluation:
+  command: [python, "{benchmark_dir}/python_bug_fix/evaluate.py"]
+repetitions: 3
+timeout_seconds: 240
+metadata:
+  model: gpt-6-sol
+  reasoning_effort: high
+  authentication: ChatGPT subscription
+  task_origin: synthetic code fixture
+  interaction: full-file replacement, no model tools

@@ -1,0 +1,8 @@
+exit_code: 0
+timed_out: False
+duration_seconds: 0.343
+
+STDOUT
+4/4 assertions passed
+
+STDERR

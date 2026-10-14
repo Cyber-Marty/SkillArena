@@ -1,0 +1,2 @@
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "{\"replacement\":\"\\\"\\\"\\\"A deliberately broken example for the synthetic demo.\\\"\\\"\\\"\\n\\n\\ndef inclusive_total(numbers: list[int], end_index: int) -> int:\\n    \\\"\\\"\\\"Sum numbers from index 0 through end_index, inclusive.\\\"\\\"\\\"\\n    return sum(numbers[:end_index + 1])\\n\"}"}}
+{"type": "turn.completed", "usage": {"input_tokens": 14548, "cached_input_tokens": 0, "cache_write_input_tokens": 0, "output_tokens": 112, "reasoning_output_tokens": 30}}
